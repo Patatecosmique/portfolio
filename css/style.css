@@ -1,0 +1,574 @@
+/* Variables globales */
+/* Palette de couleurs unifiée */
+:root {
+    --couleur-primaire: #1e3a8a; /* Bleu foncé élégant */
+    --couleur-secondaire: #1e293b; /* Gris foncé pour navbar et footer */
+    --couleur-texte: #e2e8f0; /* Blanc cassé */
+    --couleur-accent: #50C878; /* Jaune doré pour les accents */
+    --couleur-fond: #0f172a; /* Bleu nuit pour le fond principal */
+    --couleur-blanc: #ffffff; /* Blanc pur */
+}
+
+/* Réinitialisation globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page - fond uniforme */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--couleur-fond); /* Fond bleu nuit uniforme pour toutes les pages */
+    color: var(--couleur-texte);
+}
+
+/* Navigation - couleur uniforme */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--couleur-secondaire); /* Gris foncé */
+    color: var(--couleur-texte);
+    padding: 25px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Liste des liens dans la navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacement entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--couleur-texte); /* Blanc cassé */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Effet au survol des liens */
+
+nav ul li a:hover {
+    background-color: var(--couleur-accent); /* Jaune doré */
+    color: var(--couleur-secondaire); /* Gris foncé */
+}
+
+/* Barre de navigation active */
+
+nav ul li a.active {
+    background-color: var(--couleur-accent); /* Jaune doré */
+    color: var(--couleur-secondaire); /* Gris foncé */
+    font-weight: bold;
+}
+
+/* Main container */
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Accueil */
+#accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    color: var(--couleur-texte);
+    background-color: var(--couleur-fond);
+    position: relative;
+    padding-top: 60px; /* Espace pour la navbar */
+}
+
+/* Effet de superposition pour le fond */
+#accueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Contenu de l'accueil */
+#accueil .content {
+    text-align: center;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+/* Photo de profil dans la section d'accueil */
+#accueil .photo-profil {
+    width: 150px;
+    height: 150px;
+    background: url('/img/photo-profil.jpg') no-repeat center center/cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid var(--couleur-accent);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#accueil .photo-profil:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Titre principal dans la section d'accueil */
+#accueil h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--couleur-accent);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Texte descriptif dans la section d'accueil */
+#accueil p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--couleur-texte);
+    line-height: 1.8;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Liens vers les réseaux sociaux */
+#accueil .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#accueil .social-links a {
+    color: var(--couleur-texte);
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#accueil .social-links a:hover {
+    transform: scale(1.2);
+    color: var(--couleur-accent);
+}
+
+/* Style générique pour toutes les sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--couleur-fond); /* Même fond que le body pour cohérence */
+}
+
+section > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titres des sections */
+section h2 {
+    font-size: 2.5rem;
+    color: var(--couleur-accent);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Section Compétences - même fond que les autres sections */
+#competences {
+    background-color: var(--couleur-fond); /* Même fond que les autres sections */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 150px;
+    padding: 80px 20px;
+}
+
+
+/* Grille des compétences */
+.grille-competences {
+    display: flex;
+    flex-wrap: wrap;;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cartes des compétences */
+.competence {
+    background: var(--couleur-secondaire); /* Utilise la couleur secondaire pour contraste */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.intro-competences {
+    margin-bottom: 50px;
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Effet au survol des cartes de compétences */
+.competence:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Icônes dans les cartes de compétences */
+.competence i {
+    font-size: 3rem;
+    color: var(--couleur-accent);
+    margin-bottom: 15px;
+}
+
+/* Titres des compétences */
+.competence h3 {
+    font-size: 1.5rem;
+    color: var(--couleur-texte);
+    margin-top: 10px;
+}
+
+/* Section Projets */
+#projets {
+    background-color: var(--couleur-fond); /* Même fond que les autres sections */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    margin-top: 150px;
+}
+
+/* Introduction des projets */
+.intro-projets {
+    margin-bottom: 50px;
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grille des projets */
+.grille-projets {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 30px; /* Espacement entre les cartes */
+    justify-content: center; /* Centre les cartes dans la grille */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cartes des projets */
+.projet {
+    background: var(--couleur-secondaire); /* Fond gris foncé */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px; /* Largeur fixe pour que toutes les cartes soient identiques */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Effet au survol des cartes de projets */
+.projet:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+    border-color: var(--couleur-accent); /* Bordure dorée au survol */
+}
+
+/* Icônes des projets */
+.projet-icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; /* Espacement sous l'icône */
+}
+
+.projet-icones i {
+    font-size: 2.5rem; /* Taille des icônes */
+    color: var(--couleur-accent); /* Couleur des icônes */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.projet-icones i:hover {
+    transform: scale(1.2); /* Agrandit légèrement l'icône au survol */
+    color: var(--couleur-texte); /* Change la couleur au survol */
+}
+
+/* Titre des projets */
+.projet h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Description des projets */
+.projet p {
+    font-size: 1rem;
+    color: var(--couleur-texte); /* Blanc cassé */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Titres des semestres */
+#projets h3 {
+    font-size: 1.3rem; /* Augmente la taille du titre */
+    color: var(--couleur-blanc); /* Couleur d'accent */
+    margin-top: 30px; /* Augmente l'espace au-dessus du titre */
+    margin-bottom: 40px; /* Augmente l'espace en dessous du titre */
+    text-align: center; /* Centre le texte */
+    text-transform: uppercase; /* Met le texte en majuscules */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+}
+
+/* Séparateur visuel entre les semestres */
+.separateur {
+    width: 80%; /* Largeur du séparateur */
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: var(--couleur-accent); /* Couleur d'accent */
+    margin: 40px auto; /* Espace autour du séparateur */
+    opacity: 0.5; /* Légère transparence */
+}
+
+/* Sections supplémentaires avec même fond */
+#parcours, #sae, #projection {
+    background-color: var(--couleur-fond); /* Même fond que les autres sections */
+    padding: 80px 20px;
+    min-height: 80vh;
+}
+
+/* Section principale pour le détail du projet */
+#projet-detail {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--couleur-fond); /* Fond bleu nuit */
+    color: var(--couleur-texte); /* Texte blanc cassé */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre principal du projet */
+#projet-titre {
+    font-size: 2.5rem;
+    color: #d1d5db; /* Gris clair pour un contraste doux */
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Contenu principal du projet */
+#projet-contenu {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #cbd5e1; /* Gris légèrement atténué */
+}
+
+/* Sous-sections du projet */
+.projet-section {
+    margin-bottom: 50px;
+}
+
+/* Titres des sous-sections */
+.projet-section h3 {
+    font-size: 1.8rem;
+    color: #a3b4c4; /* Gris bleuté pour un contraste subtil */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Texte des sous-sections */
+.projet-section p {
+    font-size: 1rem;
+    color: #cbd5e1; /* Gris légèrement atténué */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Liste des preuves (traces) */
+.projet-preuves {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Carte pour chaque preuve */
+.preuve {
+    background: var(--couleur-secondaire); /* Fond gris foncé */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preuve:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre des preuves */
+.preuve h4 {
+    font-size: 1.2rem;
+    color: #a3b4c4; /* Gris bleuté pour un contraste subtil */
+    margin-bottom: 10px;
+}
+
+/* Description des preuves */
+.preuve p {
+    font-size: 0.9rem;
+    color: #cbd5e1; /* Gris légèrement atténué */
+    line-height: 1.4;
+}
+
+/* Section de réflexion */
+#projet-reflexion {
+    background: var(--couleur-secondaire); /* Fond gris foncé */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+/* Titre de la réflexion */
+#projet-reflexion h3 {
+    font-size: 1.8rem;
+    color: #d1d5db; /* Gris clair pour un contraste doux */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Texte de la réflexion */
+#projet-reflexion p {
+    font-size: 1rem;
+    color: #cbd5e1; /* Gris légèrement atténué */
+    line-height: 1.8;
+}
+
+/* Bouton de retour */
+#retour-projets {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: var(--couleur-accent);
+    color: var(--couleur-secondaire);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#retour-projets:hover {
+    background-color: #cbd5e1; /* Gris légèrement atténué */
+    transform: scale(1.05);
+    color: var(--couleur-secondaire);
+}
+
+/* Footer - même couleur partout */
+footer {
+    background-color: var(--couleur-secondaire); /* Même couleur que la navbar */
+    color: var(--couleur-texte);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #accueil h1 {
+        font-size: 2.2rem;
+    }
+
+    .grille-competences {
+        flex-direction: column;
+    }
+
+    #competences h2 {
+        font-size: 2rem;
+    }
+
+    .competence {
+        width: 100%;
+        max-width: 340px;
+    }
+}
