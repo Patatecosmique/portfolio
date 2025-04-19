@@ -24,7 +24,76 @@ const projets = {
         ],
         reflexion: "Grâce à ce projet, j'ai acquis une meilleure compréhension des réseaux et de leur fonctionnement."
     },
-    // Ajoutez d'autres projets ici...
+    3: {
+        titre: "Projet 3 - Découvrir un dispositif de transmission",
+        description: "Ce projet explore les dispositifs de transmission et leur fonctionnement dans un réseau.",
+        preuves: [
+            { titre: "Preuve 1", description: "Étude d'un dispositif de transmission." },
+            { titre: "Preuve 2", description: "Rapport sur les technologies de transmission." },
+            { titre: "Preuve 3", description: "Exercice pratique sur la configuration d'un dispositif." }
+        ],
+        reflexion: "Ce projet m'a permis de mieux comprendre les technologies de transmission et leur rôle dans les réseaux."
+    },
+    4: {
+        titre: "Projet 4 - Se présenter sur Internet",
+        description: "Ce projet consiste à créer une présence en ligne professionnelle à travers un portfolio ou un site web.",
+        preuves: [
+            { titre: "Preuve 1", description: "Création d'un portfolio en ligne." },
+            { titre: "Preuve 2", description: "Rapport sur les bonnes pratiques de présentation en ligne." },
+            { titre: "Preuve 3", description: "Exercice pratique sur la personnalisation d'un site web." }
+        ],
+        reflexion: "Ce projet m'a aidé à développer ma présence en ligne et à mieux comprendre l'importance d'une présentation professionnelle."
+    },
+    5: {
+        titre: "Projet 5 - Traiter des données",
+        description: "Ce projet porte sur la collecte, le traitement et l'analyse des données pour en tirer des informations utiles.",
+        preuves: [
+            { titre: "Preuve 1", description: "Analyse de données avec un outil dédié." },
+            { titre: "Preuve 2", description: "Rapport sur les résultats de l'analyse." },
+            { titre: "Preuve 3", description: "Exercice pratique sur la visualisation des données." }
+        ],
+        reflexion: "Ce projet m'a permis de mieux comprendre les techniques de traitement des données et leur importance dans la prise de décision."
+    },
+    6: {
+        titre: "Projet 6 - Construire un réseau informatique",
+        description: "Ce projet consiste à concevoir et mettre en place un réseau informatique pour répondre à des besoins spécifiques.",
+        preuves: [
+            { titre: "Preuve 1", description: "Schéma détaillé du réseau." },
+            { titre: "Preuve 2", description: "Configuration des équipements réseau." },
+            { titre: "Preuve 3", description: "Rapport sur les performances du réseau." }
+        ],
+        reflexion: "Ce projet m'a permis de développer mes compétences en conception et configuration de réseaux informatiques."
+    },
+    7: {
+        titre: "Projet 7 - Mesurer et caractériser un signal",
+        description: "Ce projet explore les techniques de mesure et de caractérisation des signaux dans un environnement technique.",
+        preuves: [
+            { titre: "Preuve 1", description: "Rapport sur les caractéristiques d'un signal." },
+            { titre: "Preuve 2", description: "Exercice pratique sur l'utilisation d'un oscilloscope." },
+            { titre: "Preuve 3", description: "Analyse des résultats de mesure." }
+        ],
+        reflexion: "Ce projet m'a aidé à mieux comprendre les signaux et leur importance dans les systèmes techniques."
+    },
+    8: {
+        titre: "Projet 8 - Mettre en place une solution informatique",
+        description: "Ce projet consiste à déployer une solution informatique pour résoudre un problème spécifique.",
+        preuves: [
+            { titre: "Preuve 1", description: "Étude des besoins pour la solution." },
+            { titre: "Preuve 2", description: "Rapport sur la mise en œuvre de la solution." },
+            { titre: "Preuve 3", description: "Exercice pratique sur le déploiement de la solution." }
+        ],
+        reflexion: "Ce projet m'a permis de développer mes compétences en résolution de problèmes et en déploiement de solutions informatiques."
+    },
+    9: {
+        titre: "Projet 9 - Projet intégratif",
+        description: "Ce projet final regroupe toutes les compétences acquises pour réaliser un projet complet et complexe.",
+        preuves: [
+            { titre: "Preuve 1", description: "Planification du projet." },
+            { titre: "Preuve 2", description: "Rapport sur les étapes du projet." },
+            { titre: "Preuve 3", description: "Présentation finale du projet." }
+        ],
+        reflexion: "Ce projet m'a permis de mettre en pratique toutes les compétences acquises et de travailler sur un projet d'envergure."
+    }
 };
 
 // Charger les détails du projet
