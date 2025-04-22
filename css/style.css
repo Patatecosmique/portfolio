@@ -40,6 +40,10 @@ html, body {
     margin: 0;
 }
 
+a {
+    text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
 main {
     flex: 1;
 }
@@ -343,36 +347,38 @@ nav ul li a.active {
 }
 
 /* Description des projets */
+
 .projet p {
     font-size: 1rem;
     color: var(--couleur-texte); /* Blanc cassé */
     line-height: 1.6;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 /* Titres des semestres */
 #projets h3 {
-    font-size: 1.3rem; /* Augmente la taille du titre */
-    color: var(--couleur-blanc); /* Couleur d'accent */
-    margin-top: 30px; /* Augmente l'espace au-dessus du titre */
-    margin-bottom: 40px; /* Augmente l'espace en dessous du titre */
-    text-align: center; /* Centre le texte */
+    font-size: 1.3rem; 
+    color: var(--couleur-blanc); 
+    margin-top: 20px; 
+    margin-bottom: 40px; 
+    text-align: center; 
     text-transform: uppercase; /* Met le texte en majuscules */
-    letter-spacing: 1px; /* Espacement entre les lettres */
+    letter-spacing: 1px; 
 }
 
 /* Séparateur visuel entre les semestres */
 .separateur {
-    width: 80%; /* Largeur du séparateur */
-    height: 2px; /* Épaisseur de la ligne */
-    background-color: var(--couleur-accent); /* Couleur d'accent */
-    margin: 40px auto; /* Espace autour du séparateur */
-    opacity: 0.5; /* Légère transparence */
+    width: 80%; 
+    height: 2px; 
+    background-color: var(--couleur-accent); 
+    margin: 40px auto; 
+    opacity: 0.5; 
 }
 
 /* Sections supplémentaires avec même fond */
 #parcours, #sae, #projection {
-    background-color: var(--couleur-fond); /* Même fond que les autres sections */
+    background-color: var(--couleur-fond); 
     padding: 80px 20px;
     min-height: 80vh;
 }
@@ -387,17 +393,17 @@ nav ul li a.active {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 200px;
-    background-color: var(--couleur-fond); /* Fond bleu nuit */
-    color: var(--couleur-texte); /* Texte blanc cassé */
+    background-color: var(--couleur-fond); 
+    color: var(--couleur-texte); 
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Titre principal du projet */
 #projet-titre {
-    margin-top: 0px;
+    margin-top: -40px;
     font-size: 2.5rem;
-    color: #d1d5db; /* Gris clair pour un contraste doux */
+    color: #d1d5db; 
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -410,7 +416,7 @@ nav ul li a.active {
     line-height: 1.8;
     margin-bottom: 40px;
     text-align: center;
-    color: #cbd5e1; /* Gris légèrement atténué */
+    color: #cbd5e1; 
 }
 
 /* Sous-sections du projet */
@@ -421,7 +427,7 @@ nav ul li a.active {
 /* Titres des sous-sections */
 .projet-section h3 {
     font-size: 1.8rem;
-    color: #a3b4c4; /* Gris bleuté pour un contraste subtil */
+    color: #a3b4c4; 
     margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -431,7 +437,7 @@ nav ul li a.active {
 /* Texte des sous-sections */
 .projet-section p {
     font-size: 1rem;
-    color: #cbd5e1; /* Gris légèrement atténué */
+    color: #cbd5e1;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -447,7 +453,7 @@ nav ul li a.active {
 
 /* Carte pour chaque preuve */
 .preuve {
-    background: var(--couleur-secondaire); /* Fond gris foncé */
+    background: var(--couleur-secondaire); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -464,20 +470,20 @@ nav ul li a.active {
 /* Titre des preuves */
 .preuve h4 {
     font-size: 1.2rem;
-    color: #a3b4c4; /* Gris bleuté pour un contraste subtil */
+    color: #a3b4c4; 
     margin-bottom: 10px;
 }
 
 /* Description des preuves */
 .preuve p {
     font-size: 0.9rem;
-    color: #cbd5e1; /* Gris légèrement atténué */
+    color: #cbd5e1; 
     line-height: 1.4;
 }
 
 /* Section de réflexion */
 #projet-reflexion {
-    background: var(--couleur-secondaire); /* Fond gris foncé */
+    background: var(--couleur-secondaire); 
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -488,7 +494,7 @@ nav ul li a.active {
 /* Titre de la réflexion */
 #projet-reflexion h3 {
     font-size: 1.8rem;
-    color: #d1d5db; /* Gris clair pour un contraste doux */
+    color: #d1d5db; 
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -497,7 +503,7 @@ nav ul li a.active {
 /* Texte de la réflexion */
 #projet-reflexion p {
     font-size: 1rem;
-    color: #cbd5e1; /* Gris légèrement atténué */
+    color: #cbd5e1; 
     line-height: 1.8;
 }
 
