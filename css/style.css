@@ -48,6 +48,14 @@ main {
     flex: 1;
 }
 
+/* Style pour les liens personnalisés */
+.custom-link {
+    color: var(--couleur-accent); /* Utilisez une couleur d'accent de votre palette */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Rendre le texte plus visible */
+    transition: color 0.3s ease; /* Ajoute une transition pour un effet au survol */
+}
+
 /* ---------------------------------------------------------------- */
 /* ---------------------- NAVIGATION (TOUTES PAGES) --------------- */
 /* ---------------------------------------------------------------- */
@@ -611,13 +619,6 @@ footer {
     }
 }
 
-/* Style pour les liens personnalisés */
-.custom-link {
-    color: var(--couleur-accent); /* Utilisez une couleur d'accent de votre palette */
-    text-decoration: none; /* Supprime le soulignement */
-    font-weight: bold; /* Rendre le texte plus visible */
-    transition: color 0.3s ease; /* Ajoute une transition pour un effet au survol */
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
