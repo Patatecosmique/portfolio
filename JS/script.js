@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('projetActuel', JSON.stringify(projetInfo));
 
             // Rediriger vers la page de détails
-            window.location.href = `projet-details.html`;
+            window.location.href = `projet-detail.html`;
         });
     });
 });
