@@ -525,6 +525,57 @@ nav ul li a.active {
     color: var(--couleur-secondaire);
 }
 
+/* Section des Apprentissages Critiques */
+#apprentissages-critiques {
+    margin-top: 40px;
+    padding: 30px;
+    background: var(--couleur-secondaire); /* Fond gris foncé */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre de la section */
+#apprentissages-critiques h3 {
+    font-size: 1.8rem;
+    color: #a3b4c4; /* Gris bleuté pour un contraste subtil */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Tableau des apprentissages critiques */
+#apprentissages-critiques table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#apprentissages-critiques th,
+#apprentissages-critiques td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure subtile */
+    color: var(--couleur-texte); /* Texte blanc cassé */
+}
+
+#apprentissages-critiques th {
+    background-color: var(--couleur-accent); /* Couleur d'accent */
+    color: var(--couleur-secondaire); /* Texte sombre */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#apprentissages-critiques td {
+    background-color: var(--couleur-fond); /* Fond bleu nuit */
+}
+
+/* Effet au survol des lignes */
+#apprentissages-critiques tr:hover td {
+    background-color: rgba(80, 200, 120, 0.1); /* Fond légèrement teinté */
+    transition: background-color 0.3s ease;
+}
+
 /* ---------------------------------------------------------------- */
 /* ---------------------- FOOTER (TOUTES PAGES) ------------------- */
 /* ---------------------------------------------------------------- */
@@ -552,6 +603,14 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Style pour les liens personnalisés */
+.custom-link {
+    color: var(--couleur-accent); /* Utilisez une couleur d'accent de votre palette */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Rendre le texte plus visible */
+    transition: color 0.3s ease; /* Ajoute une transition pour un effet au survol */
 }
 
 /* Responsive Design */

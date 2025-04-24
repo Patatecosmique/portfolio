@@ -8,9 +8,20 @@ const projets = {
         titre: "Projet 1 - Se sensibiliser à l'hygiène informatique",
         description: "Ce projet vise à sensibiliser les utilisateurs aux bonnes pratiques en matière de sécurité informatique.",
         preuves: [
-            { titre: "Preuve 1", description: "Présentation sur les bonnes pratiques de sécurité." },
-            { titre: "Preuve 2", description: "Rapport d'analyse des risques informatiques." },
-            { titre: "Preuve 3", description: "Exercice pratique sur la gestion des mots de passe." }
+            { titre: "Preuve 1", description: "Présentation sur les bonnes pratiques de sécurité à un public." },
+            {
+                titre: "Preuve 2",
+                description: `Création d'une <a href="./preuves/Keepas.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">notice explicative</a> pour guider l'utilisation du gestionnaire de mots de passe KeepassXC.`
+            },
+            {
+                titre: "Preuve 3",
+                description: `
+                    Sensibilisation aux risques liés aux mots de passe : démonstration de la rapidité avec laquelle un mot de passe faible peut être piraté, parfois en moins de 10 minutes, voire en quelques secondes :
+                    <br>
+                    <a href="./preuves/brute-force.jpg" target="_blank" rel="noopener noreferrer" class="custom-link">
+                        Exemple de code brute force
+                    </a>`
+            }
         ],
         reflexion: "Ce projet m'a permis de mieux comprendre les enjeux de la sécurité informatique et d'identifier mes points faibles dans la gestion des risques."
     },
@@ -18,9 +29,19 @@ const projets = {
         titre: "Projet 2 - S'initier aux réseaux informatiques",
         description: "Ce projet consiste à découvrir les bases des réseaux informatiques, y compris la configuration et la gestion.",
         preuves: [
-            { titre: "Preuve 1", description: "Schéma d'un réseau local." },
-            { titre: "Preuve 2", description: "Configuration d'un routeur." },
-            { titre: "Preuve 3", description: "Rapport sur les protocoles réseau." }
+            { 
+                titre: "Preuve 1", 
+                description: `Création de <a href="./preuves/shema-physique_logique.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">shéma physique et logique</a> d"un réseau local.`
+            },
+            {
+                titre: "Preuve 2", 
+                description: `Mise en place d'un planning détaillé à l'aide de GanttProject pour la gestion des tâches chronologiques et de 
+                <a href="https://trello.com/b/24VUiNHM/sae12" target="_blank" rel="noopener noreferrer" class="custom-link">Trello</a> pour le suivi collaboratif et la répartition des responsabilités.`
+            },
+            { titre: "Preuve 3", 
+                description: '<a href="./preuves/config-commutateur.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">Configuration</a> du matériel réseaux.' 
+
+            },
         ],
         reflexion: "Grâce à ce projet, j'ai acquis une meilleure compréhension des réseaux et de leur fonctionnement."
     },
@@ -96,6 +117,66 @@ const projets = {
     }
 };
 
+
+
+// Ajouter les apprentissages critiques pour chaque projet
+const apprentissagesCritiques = {
+    1: [
+        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
+        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’intégrer avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "" },
+        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "" },
+    ],
+    2: [
+        { apprentissage: "Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications", commentaire: "" },
+        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
+        { apprentissage: "Configurer les fonctions de base du réseau local", commentaire: "" },
+        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’intégrer avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "" },
+        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "" },
+        { apprentissage: "Installer un poste client, expliquer la procédure mise en place", commentaire: "" },
+    ],
+    3: [
+        { apprentissage: "Mesurer et analyser les signaux", commentaire: "" },
+        { apprentissage: "Déployer des supports de transmission", commentaire: "" },
+        { apprentissage: "Communiquer avec un tiers (client, collaborateur…) et adapter son discours et sa langue à son interlocuteur", commentaire: "" },
+    ],
+    4: [
+        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "" },
+        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "" },
+    ],
+    5: [
+        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "" },
+        { apprentissage: "Lire, exécuter, corriger et modifier un programme", commentaire: "" },
+        { apprentissage: "Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "" },
+        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "" },
+        { apprentissage: "Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "" },
+        { apprentissage: "S'intégrer dans un environnement propice au dévloppement et au travail collaboratif", commentaire: "" },
+    ],
+    6: [
+        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
+        { apprentissage: "Configurer les fonctions de base du réseau local", commentaire: "" },
+        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’intégrer avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "" },
+        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "" },
+        { apprentissage: "Installer un poste client, expliquer la procédure mise en place", commentaire: "" },
+    ],
+    7: [
+        { apprentissage: "Mesurer et analyser les signaux", commentaire: "" },
+        { apprentissage: "Caractériser des systèmes de transmission élémentaire et découvrir la modulation mathématique de leur fonctionnement", commentaire: "" },
+        { apprentissage: "Déployer des supports de transmission", commentaire: "" },
+        { apprentissage: "Communiquer avec un tiers (client, collaborateur…) et adapter son discours et sa langue à son interlocuteur", commentaire: "" },
+    ],
+    8: [
+        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "" },
+        { apprentissage: "Lire, exécuter, corriger et modifier un programme", commentaire: "" },
+        { apprentissage: "Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "" },
+        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "" },
+        { apprentissage: "Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "" },
+        { apprentissage: "S'intégrer dans un environnement propice au dévloppement et au travail collaboratif", commentaire: "" },
+    ],
+    9: [
+        { apprentissage: "Prend en compte tout les AC du semestre 2", commentaire: "" },
+    ]
+};
+
 // Charger les détails du projet
 if (projets[projetId]) {
     const projet = projets[projetId];
@@ -106,15 +187,17 @@ if (projets[projetId]) {
 
     // Ajouter les preuves dynamiquement
     const preuvesContainer = document.getElementById("projet-preuves");
-    projet.preuves.forEach(preuve => {
-        const preuveElement = document.createElement("div");
-        preuveElement.classList.add("preuve");
-        preuveElement.innerHTML = `
-            <h4>${preuve.titre}</h4>
-            <p>${preuve.description}</p>
-        `;
-        preuvesContainer.appendChild(preuveElement);
-    });
+    if (projet.preuves && preuvesContainer) {
+        projet.preuves.forEach(preuve => {
+            const preuveElement = document.createElement("div");
+            preuveElement.classList.add("preuve");
+            preuveElement.innerHTML = `
+                <h4>${preuve.titre}</h4>
+                <p>${preuve.description}</p>
+            `;
+            preuvesContainer.appendChild(preuveElement);
+        });
+    }
 
     // Mettre à jour la réflexion
     document.getElementById("projet-reflexion-texte").textContent = projet.reflexion;
@@ -124,4 +207,20 @@ if (projets[projetId]) {
     document.getElementById("projet-description").textContent = "Aucun détail disponible pour ce projet.";
     document.getElementById("projet-preuves").innerHTML = "";
     document.getElementById("projet-reflexion-texte").textContent = "";
+}
+
+// Charger les apprentissages critiques dans le tableau
+if (apprentissagesCritiques[projetId]) {
+    const tableBody = document.getElementById("apprentissages-table");
+
+    if (tableBody) {
+        apprentissagesCritiques[projetId].forEach(item => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${item.apprentissage}</td>
+                <td>${item.commentaire}</td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
 }
