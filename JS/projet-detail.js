@@ -49,19 +49,26 @@ const projets = {
         titre: "Projet 3 - Découvrir un dispositif de transmission",
         description: "Ce projet explore les dispositifs de transmission et leur fonctionnement dans un réseau.",
         preuves: [
-            { titre: "Preuve 1", description: "Étude d'un dispositif de transmission." },
-            { titre: "Preuve 2", description: "Rapport sur les technologies de transmission." },
-            { titre: "Preuve 3", description: "Exercice pratique sur la configuration d'un dispositif." }
+            { 
+                titre: "Preuve 1", 
+                description: `Création d'un <a href="./preuves/photometrie.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">rapport détaillé sur les mesures photométriques</a>
+                , incluant l'analyse des résultats et leur interprétation.`
+            },
+            { 
+                titre: "Preuve 2", 
+                description: `Rédaction d'un <a href="./preuves/DTF.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">rapport technique</a> sur les mesures effectuées sur un câble coaxial.` 
+            },
         ],
         reflexion: "Ce projet m'a permis de mieux comprendre les technologies de transmission et leur rôle dans les réseaux."
     },
     4: {
         titre: "Projet 4 - Se présenter sur Internet",
-        description: "Ce projet consiste à créer une présence en ligne professionnelle à travers un portfolio ou un site web.",
+        description: "Ce projet consiste à créer site web.",
         preuves: [
-            { titre: "Preuve 1", description: "Création d'un portfolio en ligne." },
-            { titre: "Preuve 2", description: "Rapport sur les bonnes pratiques de présentation en ligne." },
-            { titre: "Preuve 3", description: "Exercice pratique sur la personnalisation d'un site web." }
+            { 
+                titre: "Preuve 1",
+                description: `Création d'un site <a href="https://patatecosmique.github.io/PROJET-WEB/" target="_blank" rel="noopener noreferrer" class="custom-link">web personnel</a>`
+            },
         ],
         reflexion: "Ce projet m'a aidé à développer ma présence en ligne et à mieux comprendre l'importance d'une présentation professionnelle."
     },
@@ -69,9 +76,18 @@ const projets = {
         titre: "Projet 5 - Traiter des données",
         description: "Ce projet porte sur la collecte, le traitement et l'analyse des données pour en tirer des informations utiles.",
         preuves: [
-            { titre: "Preuve 1", description: "Analyse de données avec un outil dédié." },
-            { titre: "Preuve 2", description: "Rapport sur les résultats de l'analyse." },
-            { titre: "Preuve 3", description: "Exercice pratique sur la visualisation des données." }
+            { 
+                titre: "Preuve 1", 
+                description: `Extraction de données depuis une <a href="https://pokeapi.co/docs/v2#google_vignette" target="_blank" rel="noopener noreferrer" class="custom-link">API</a> en utilisant Python pour récupérer des informations pertinentes sur un pokemon.`
+            },
+            { 
+                titre: "Preuve 2", 
+                description: "Analyse des données extraites et génération d'un rapport détaillé sur les informations obtenues." 
+            },
+            { 
+                titre: "Preuve 3", 
+                description: "Création d'une page HTML dynamique en Python pour afficher les résultats de manière structurée et visuelle." 
+            },
         ],
         reflexion: "Ce projet m'a permis de mieux comprendre les techniques de traitement des données et leur importance dans la prise de décision."
     },
@@ -81,7 +97,7 @@ const projets = {
         preuves: [
             { titre: "Preuve 1", description: "Schéma détaillé du réseau." },
             { titre: "Preuve 2", description: "Configuration des équipements réseau." },
-            { titre: "Preuve 3", description: "Rapport sur les performances du réseau." }
+            { titre: "Preuve 3", description: "Rapport sur les performances du réseau." },
         ],
         reflexion: "Ce projet m'a permis de développer mes compétences en conception et configuration de réseaux informatiques."
     },
