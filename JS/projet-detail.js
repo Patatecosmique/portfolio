@@ -8,7 +8,10 @@ const projets = {
         titre: "Projet 1 - Se sensibiliser à l'hygiène informatique",
         description: "Ce projet vise à sensibiliser les utilisateurs aux bonnes pratiques en matière de sécurité informatique.",
         preuves: [
-            { titre: "Preuve 1", description: "Présentation sur les bonnes pratiques de sécurité à un public." },
+            { 
+                titre: "Preuve 1", 
+                description: `Réalisations du <a href="./preuves/MOOC.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">MOOC</a> de l'ANSSI sur la sécurité informatique.`
+            },
             {
                 titre: "Preuve 2",
                 description: `Création d'une <a href="./preuves/Keepas.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">notice explicative</a> pour guider l'utilisation du gestionnaire de mots de passe KeepassXC.`
@@ -23,73 +26,78 @@ const projets = {
                     </a>`
             }
         ],
-        reflexion: "Ce projet m'a permis de mieux comprendre les enjeux de la sécurité informatique et d'identifier mes points faibles dans la gestion des risques."
+        reflexion: "Ce projet était très intéressant car il m'a permis de découvrir les problèmes liés aux mots de passe trop faibles et les potentielles attaques qui peuvent en découler. J'ai beaucoup appris sur les bonnes pratiques en matière de sécurité informatique, ce qui donne une première vue essentielle sur ce domaine. Cela m'a également sensibilisé à l'importance de protéger ses données personnelles."
     },
     2: {
         titre: "Projet 2 - S'initier aux réseaux informatiques",
         description: "Ce projet consiste à découvrir les bases des réseaux informatiques, y compris la configuration et la gestion.",
         preuves: [
-            { 
-                titre: "Preuve 1", 
-                description: `Création de <a href="./preuves/shema-physique_logique.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">shéma physique et logique</a> d"un réseau local.`
+            {
+                titre: "Preuve 1",
+                description: `Création de <a href="./preuves/shema-physique_logique.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">schéma physique et logique</a> d'un réseau local.`
             },
             {
-                titre: "Preuve 2", 
+                titre: "Preuve 2",
                 description: `Mise en place d'un planning détaillé à l'aide de GanttProject pour la gestion des tâches chronologiques et de 
                 <a href="https://trello.com/b/24VUiNHM/sae12" target="_blank" rel="noopener noreferrer" class="custom-link">Trello</a> pour le suivi collaboratif et la répartition des responsabilités.`
             },
-            { titre: "Preuve 3", 
-                description: '<a href="./preuves/config-commutateur.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">Configuration</a> du matériel réseaux.' 
-
-            },
+            {
+                titre: "Preuve 3",
+                description: '<a href="./preuves/config-commutateur.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">Configuration</a> du matériel réseau.'
+            }
         ],
-        reflexion: "Grâce à ce projet, j'ai acquis une meilleure compréhension des réseaux et de leur fonctionnement."
+        reflexion: "Au début, ce projet était très compliqué car il introduisait beaucoup de notions que je n'avais pas encore vues. Cependant, cela m'a poussé à chercher dans la documentation et à apprendre par moi-même, ce qui m'a permis de progresser plus rapidement. J'ai perdu un peu de temps au début sur certaines tâches, mais j'ai fini par mieux m'organiser. J'ai également pris un rôle de leader en expliquant les choses aux autres, ce qui m'a permis de développer des compétences en gestion de projet."
     },
     3: {
         titre: "Projet 3 - Découvrir un dispositif de transmission",
-        description: "Ce projet explore les dispositifs de transmission et leur fonctionnement dans un réseau.",
+        description: "Ce projet explore les dispositifs de transmission et leur fonctionnement.",
         preuves: [
-            { 
-                titre: "Preuve 1", 
-                description: `Création d'un <a href="./preuves/photometrie.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">rapport détaillé sur les mesures photométriques</a>
-                , incluant l'analyse des résultats et leur interprétation.`
+            {
+                titre: "Preuve 1",
+                description: `Création d'un <a href="./preuves/photometrie.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">rapport détaillé sur les mesures photométriques</a>, incluant l'analyse des résultats et leur interprétation.`
             },
-            { 
-                titre: "Preuve 2", 
-                description: `Rédaction d'un <a href="./preuves/DTF.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">rapport technique</a> sur les mesures effectuées sur un câble coaxial.` 
-            },
+            {
+                titre: "Preuve 2",
+                description: `Rédaction d'un <a href="./preuves/DTF.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">rapport technique</a> sur les mesures effectuées sur un câble coaxial.`
+            }
         ],
-        reflexion: "Ce projet m'a permis de mieux comprendre les technologies de transmission et leur rôle dans les réseaux."
+        reflexion: "Ce projet était complexe, mais grâce à l'entraide avec mes camarades et ma façon de toujours chercher à comprendre comment les choses fonctionnent, j'ai pu en apprendre beaucoup sur les dispositifs de transmission. Cela m'a permis de mieux appréhender leur rôle et leur importance dans les réseaux."
     },
     4: {
         titre: "Projet 4 - Se présenter sur Internet",
-        description: "Ce projet consiste à créer site web.",
+        description: "Ce projet consiste à créer un site web.",
         preuves: [
-            { 
+            {
                 titre: "Preuve 1",
-                description: `Création d'un site <a href="https://patatecosmique.github.io/PROJET-WEB/" target="_blank" rel="noopener noreferrer" class="custom-link">web personnel</a>`
-            },
+                description: `Création d'un site <a href="https://patatecosmique.github.io/PROJET-WEB/" target="_blank" rel="noopener noreferrer" class="custom-link">web personnel</a>.`
+            }
         ],
-        reflexion: "Ce projet m'a aidé à développer ma présence en ligne et à mieux comprendre l'importance d'une présentation professionnelle."
+        reflexion: "J'ai adoré ce projet, car il m'a permis d'apprendre à créer un beau site web. Je suis sûr que je peux encore m'améliorer, et je cherche toujours à progresser. J'ai bien géré mon temps et tout organisé, ce qui a rendu le projet fluide et agréable à réaliser."
     },
     5: {
         titre: "Projet 5 - Traiter des données",
-        description: "Ce projet porte sur la collecte, le traitement et l'analyse des données pour en tirer des informations utiles.",
+        description: "Ce projet porte sur la collecte, le traitement et l'analyse des données pour en tirer des informations utiles via une API.",
         preuves: [
-            { 
-                titre: "Preuve 1", 
-                description: `Extraction de données depuis une <a href="https://pokeapi.co/docs/v2#google_vignette" target="_blank" rel="noopener noreferrer" class="custom-link">API</a> en utilisant Python pour récupérer des informations pertinentes sur un pokemon.`
+            {
+                titre: "Preuve 1",
+                description: `Vidéo de démonstration de la création d'une fiche Pokémon en extrayant des données depuis une <a href="https://pokeapi.co/docs/v2#google_vignette" target="_blank" rel="noopener noreferrer" class="custom-link">API</a> en utilisant Python : 
+                          <br>
+                          <a href="./preuves/pokefiche.mp4" target="_blank" rel="noopener noreferrer" class="custom-link">Voir la vidéo</a>`
             },
-            { 
-                titre: "Preuve 2", 
-                description: "Analyse des données extraites et génération d'un rapport détaillé sur les informations obtenues." 
+            {
+                titre: "Preuve 2",
+                description: `Vidéo expliquant l'analyse des habitats Pokémon et la génération de statistiques détaillées à partir des données extraites : 
+                          <br>
+                          <a href="./preuves/pokestats.mp4" target="_blank" rel="noopener noreferrer" class="custom-link">Voir la vidéo</a>`
             },
-            { 
-                titre: "Preuve 3", 
-                description: "Création d'une page HTML dynamique en Python pour afficher les résultats de manière structurée et visuelle." 
-            },
+            {
+                titre: "Preuve 3",
+                description: `Rapport détaillé sur notre évolution et les difficultés rencontrées durant la création du projet, incluant les solutions apportées pour surmonter ces obstacles : 
+                          <br>
+                          <a href="./preuves/rapport.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">Voir le rapport</a>`
+            }
         ],
-        reflexion: "Ce projet m'a permis de mieux comprendre les techniques de traitement des données et leur importance dans la prise de décision."
+        reflexion: "Même si je ne suis pas très fort en Python, j'ai tenté avec mes camarades de comprendre comment cela fonctionnait. Ils m'ont aidé, mais je pense qu'il faudrait que je pratique davantage chez moi pour progresser. Ce projet était très enrichissant et m'a permis d'apprendre beaucoup de choses sur le traitement des données."
     },
     6: {
         titre: "Projet 6 - Construire un réseau informatique",
@@ -138,34 +146,34 @@ const projets = {
 // Ajouter les apprentissages critiques pour chaque projet
 const apprentissagesCritiques = {
     1: [
-        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
-        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’intégrer avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "" },
-        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "" },
+        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "Acquis" },
+        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "Acquis" },
+        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "Acquis" },
     ],
     2: [
-        { apprentissage: "Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications", commentaire: "" },
-        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
-        { apprentissage: "Configurer les fonctions de base du réseau local", commentaire: "" },
-        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’intégrer avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "" },
-        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "" },
-        { apprentissage: "Installer un poste client, expliquer la procédure mise en place", commentaire: "" },
+        { apprentissage: "Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications", commentaire: "En cours d'acquisition" },
+        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "Acquis" },
+        { apprentissage: "Configurer les fonctions de base du réseau local", commentaire: "Acquis" },
+        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "En cours d'acquisition" },
+        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "Acquis" },
+        { apprentissage: "Installer un poste client, expliquer la procédure mise en place", commentaire: "Acquis" },
     ],
     3: [
-        { apprentissage: "Mesurer et analyser les signaux", commentaire: "" },
-        { apprentissage: "Déployer des supports de transmission", commentaire: "" },
-        { apprentissage: "Communiquer avec un tiers (client, collaborateur…) et adapter son discours et sa langue à son interlocuteur", commentaire: "" },
+        { apprentissage: "Mesurer et analyser les signaux", commentaire: "En cours d'acquisition" },
+        { apprentissage: "Déployer des supports de transmission", commentaire: "En cours d'acquisition " },
+        { apprentissage: "Communiquer avec un tiers (client, collaborateur…) et adapter son discours et sa langue à son interlocuteur", commentaire: "Acquis" },
     ],
     4: [
-        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "" },
-        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "" },
+        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "Acquis" },
+        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "Acquis" },
     ],
     5: [
-        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "" },
-        { apprentissage: "Lire, exécuter, corriger et modifier un programme", commentaire: "" },
-        { apprentissage: "Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "" },
-        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "" },
-        { apprentissage: "Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "" },
-        { apprentissage: "S'intégrer dans un environnement propice au dévloppement et au travail collaboratif", commentaire: "" },
+        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "Acquis" },
+        { apprentissage: "Lire, exécuter, corriger et modifier un programme", commentaire: "À améliorer" },
+        { apprentissage: "Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "À améliorer" },
+        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "Acquis" },
+        { apprentissage: "Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "En cours d'acquisition" },
+        { apprentissage: "S'intégrer dans un environnement propice au développement et au travail collaboratif", commentaire: "Acquis" },
     ],
     6: [
         { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
