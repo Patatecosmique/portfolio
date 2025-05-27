@@ -8,8 +8,8 @@ const projets = {
         titre: "Projet 1 - Se sensibiliser à l'hygiène informatique",
         description: "Ce projet vise à sensibiliser les utilisateurs aux bonnes pratiques en matière de sécurité informatique.",
         preuves: [
-            { 
-                titre: "Preuve 1", 
+            {
+                titre: "Preuve 1",
                 description: `Réalisations du <a href="./preuves/MOOC.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">MOOC</a> de l'ANSSI sur la sécurité informatique.`
             },
             {
@@ -151,12 +151,12 @@ const apprentissagesCritiques = {
         { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "Acquis" },
     ],
     2: [
-        { apprentissage: "Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications", commentaire: "En cours d'acquisition" },
-        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "Acquis" },
-        { apprentissage: "Configurer les fonctions de base du réseau local", commentaire: "Acquis" },
-        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "En cours d'acquisition" },
-        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "Acquis" },
-        { apprentissage: "Installer un poste client, expliquer la procédure mise en place", commentaire: "Acquis" },
+        { apprentissage: " AC11.01 Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications", commentaire: "En cours d'acquisition" },
+        { apprentissage: "AC11.02 Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "Acquis" },
+        { apprentissage: "AC11.03 Configurer les fonctions de base du réseau local", commentaire: "Acquis" },
+        { apprentissage: "AC11.04 Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "En cours d'acquisition" },
+        { apprentissage: "AC11.05 Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "Acquis" },
+        { apprentissage: "AC11.06 Installer un poste client, expliquer la procédure mise en place", commentaire: "Acquis" },
     ],
     3: [
         { apprentissage: "Mesurer et analyser les signaux", commentaire: "En cours d'acquisition" },
@@ -201,6 +201,7 @@ const apprentissagesCritiques = {
     ]
 };
 
+
 // Charger les détails du projet
 if (projets[projetId]) {
     const projet = projets[projetId];
@@ -222,6 +223,14 @@ if (projets[projetId]) {
             preuvesContainer.appendChild(preuveElement);
         });
     }
+
+    // Ajouter une réflexion sur l'implication
+    if (projet.implication) {
+        document.getElementById("projet-implication-texte").textContent = projet.implication;
+    } else {
+        document.getElementById("projet-implication-texte").textContent = "Aucune réflexion sur l'implication disponible pour ce projet.";
+    }
+
 
     // Mettre à jour la réflexion
     document.getElementById("projet-reflexion-texte").textContent = projet.reflexion;

@@ -158,90 +158,67 @@ social-links a:hover {
 /* Section Accueil */
 #accueil {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-    color: var(--couleur-texte);
-    background-color: var(--couleur-fond);
-    position: relative;
-    padding-top: 60px; /* Espace pour la navbar */
+    align-items: center;
+    min-height: 100vh; /* Prend toute la hauteur de l'écran */
+    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Dégradé élégant */
+    color: var(--couleur-texte); /* Texte lisible */
+    padding: 20px;
 }
 
-/* Effet de superposition pour le fond */
-#accueil::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-/* Contenu de l'accueil */
 #accueil .content {
     text-align: center;
     max-width: 800px;
-    position: relative;
-    z-index: 2;
-    padding: 0 20px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2); /* Fond semi-transparent */
+    backdrop-filter: blur(10px); /* Ajout de l'effet de flou */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de profondeur */
 }
 
-/* Photo de profil dans la section d'accueil */
-#accueil .photo-profil {
+.photo-profil {
     width: 150px;
     height: 150px;
-    background: url('../img/photo-profil.jpg') no-repeat center center/cover;
-    border-radius: 50%;
+    background-color: var(--couleur-accent); /* Placeholder pour la photo */
+    border-radius: 50%; /* Cercle parfait */
     margin: 0 auto 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    border: 3px solid var(--couleur-accent);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Légère ombre */
+    background-image: url('/img/photo-profil.jpg'); /* Remplacez par le chemin de votre photo */
+    background-size: cover;
+    background-position: center;
 }
 
-#accueil .photo-profil:hover {
-    transform: scale(1.1);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+.nom-prenom {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--couleur-accent); /* Accentuer le nom */
 }
 
-/* Titre principal dans la section d'accueil */
-#accueil h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    color: var(--couleur-accent);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Texte descriptif dans la section d'accueil */
-#accueil p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: var(--couleur-texte);
+.presentation p {
+    font-size: 1.1rem;
     line-height: 1.8;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-/* Liens vers les réseaux sociaux */
-#accueil .social-links {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    animation: fadeIn 2s ease-in-out;
-}
-
-#accueil .social-links a {
+    margin-bottom: 20px;
+    text-align: justify;
     color: var(--couleur-texte);
-    font-size: 1.8rem;
-    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#accueil .social-links a:hover {
-    transform: scale(1.2);
-    color: var(--couleur-accent);
+.presentation strong {
+    color: var(--couleur-accent); /* Accentuer les mots-clés */
+}
+
+@media (max-width: 768px) {
+    #accueil .content {
+        padding: 20px;
+    }
+
+    .nom-prenom {
+        font-size: 2rem;
+    }
+
+    .presentation p {
+        font-size: 1rem;
+    }
 }
 
 /* ---------------------------------------------------------------- */
@@ -249,13 +226,13 @@ social-links a:hover {
 /* ---------------------------------------------------------------- */
 
 #competences {
-    background-color: var(--couleur-fond); /* Même fond que les autres sections */
+    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Même fond que les autres sections */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 80px 20px;
 }
 
@@ -316,13 +293,13 @@ social-links a:hover {
 /* ---------------------------------------------------------------- */
 
 #projets {
-    background-color: var(--couleur-fond); /* Même fond que les autres sections */
+    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Dégradé élégant */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 80px 20px;
-    margin-top: 150px;
+    margin-top: 100px
 }
 
 /* Introduction des projets */
@@ -430,17 +407,69 @@ social-links a:hover {
     min-height: 80vh;
 }
 
+/* Styles pour les cases des semestres */
+.cases-semestres {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.case {
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+    padding: 40px 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.case:hover {
+    background-color: var(--couleur-accent);
+    transform: scale(1.05);
+}
+
+/* Contenu des projets */
+#contenu-semestre {
+    margin-top: 20px;
+}
+
+.projet {
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projet h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.projet p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 /* ---------------------------------------------------------------- */
 /* ---------------------- PAGE PROJET-DETAIL.HTML ----------------- */
 /* ---------------------------------------------------------------- */
 
 /* Section principale pour le détail du projet */
+#main-projet-detail {
+    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Dégradé élégant */
+}
 #projet-detail {
+    background: linear-gradient(95deg, var(--couleur-fond), var(--couleur-secondaire)); /* Dégradé élégant */
     padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 200px;
-    background-color: var(--couleur-fond); 
+    margin-top: 100px; 
     color: var(--couleur-texte); 
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -628,6 +657,24 @@ social-links a:hover {
     background-color: rgba(80, 200, 120, 0.1); /* Fond légèrement teinté */
     transition: background-color 0.3s ease;
 }
+
+/* ---------------------------------------------------------------- */
+/* ---------------------- PROJECTION ------------------- */
+/* ---------------------------------------------------------------- */
+
+#projection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Prend toute la hauteur de l'écran */
+    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Dégradé élégant */
+    color: var(--couleur-texte); /* Texte lisible */
+    padding: 20px;
+}
+
+
+
+
 
 /* ---------------------------------------------------------------- */
 /* ---------------------- FOOTER (TOUTES PAGES) ------------------- */
