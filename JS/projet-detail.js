@@ -144,6 +144,7 @@ const projets = {
 
 
 // Ajouter les apprentissages critiques pour chaque projet
+
 const apprentissagesCritiques = {
     1: [
         { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "Acquis" },
@@ -200,7 +201,6 @@ const apprentissagesCritiques = {
         { apprentissage: "Prend en compte tout les AC du semestre 2", commentaire: "" },
     ]
 };
-
 
 // Charger les détails du projet
 if (projets[projetId]) {
