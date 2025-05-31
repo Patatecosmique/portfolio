@@ -81,51 +81,78 @@ const projets = {
             {
                 titre: "Preuve 1",
                 description: `Vidéo de démonstration de la création d'une fiche Pokémon en extrayant des données depuis une <a href="https://pokeapi.co/docs/v2#google_vignette" target="_blank" rel="noopener noreferrer" class="custom-link">API</a> en utilisant Python : 
-                          <br>
-                          <a href="./preuves/pokefiche.mp4" target="_blank" rel="noopener noreferrer" class="custom-link">Voir la vidéo</a>`
+                        <br>
+                        <a href="./preuves/pokefiche.mp4" target="_blank" rel="noopener noreferrer" class="custom-link">Voir la vidéo</a>`
             },
             {
                 titre: "Preuve 2",
                 description: `Vidéo expliquant l'analyse des habitats Pokémon et la génération de statistiques détaillées à partir des données extraites : 
-                          <br>
-                          <a href="./preuves/pokestats.mp4" target="_blank" rel="noopener noreferrer" class="custom-link">Voir la vidéo</a>`
+                        <br>
+                        <a href="./preuves/pokestats.mp4" target="_blank" rel="noopener noreferrer" class="custom-link">Voir la vidéo</a>`
             },
             {
                 titre: "Preuve 3",
                 description: `Rapport détaillé sur notre évolution et les difficultés rencontrées durant la création du projet, incluant les solutions apportées pour surmonter ces obstacles : 
-                          <br>
-                          <a href="./preuves/rapport.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">Voir le rapport</a>`
+                        <br>
+                        <a href="./preuves/rapport.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">Voir le rapport</a>`
             }
         ],
         reflexion: "Même si je ne suis pas très fort en Python, j'ai tenté avec mes camarades de comprendre comment cela fonctionnait. Ils m'ont aidé, mais je pense qu'il faudrait que je pratique davantage chez moi pour progresser. Ce projet était très enrichissant et m'a permis d'apprendre beaucoup de choses sur le traitement des données."
     },
     6: {
-        titre: "Projet 6 - Construire un réseau informatique",
+        titre: "Projet 6 - Construire un réseau info pour une petite structure",
         description: "Ce projet consiste à concevoir et mettre en place un réseau informatique pour répondre à des besoins spécifiques.",
         preuves: [
-            { titre: "Preuve 1", description: "Schéma détaillé du réseau." },
-            { titre: "Preuve 2", description: "Configuration des équipements réseau." },
-            { titre: "Preuve 3", description: "Rapport sur les performances du réseau." },
+            {
+                titre: "Preuve 1",
+                description: "Schéma détaillé du réseau."
+            },
+            {
+                titre: "Preuve 2",
+                description: "Configuration des équipements réseau."
+            },
+            {
+                titre: "Preuve 3",
+                description: "Rapport sur les performances du réseau."
+            },
         ],
         reflexion: "Ce projet m'a permis de développer mes compétences en conception et configuration de réseaux informatiques."
     },
     7: {
-        titre: "Projet 7 - Mesurer et caractériser un signal",
+        titre: "Projet 7 - Mesurer et caractériser un signal ou un système",
         description: "Ce projet explore les techniques de mesure et de caractérisation des signaux dans un environnement technique.",
         preuves: [
-            { titre: "Preuve 1", description: "Rapport sur les caractéristiques d'un signal." },
-            { titre: "Preuve 2", description: "Exercice pratique sur l'utilisation d'un oscilloscope." },
-            { titre: "Preuve 3", description: "Analyse des résultats de mesure." }
+            {
+                titre: "Preuve 1",
+                description: "Rapport sur les caractéristiques d'un signal."
+            },
+            {
+                titre: "Preuve 2",
+                description: "Exercice pratique sur l'utilisation d'un oscilloscope."
+            },
+            {
+                titre: "Preuve 3",
+                description: "Analyse des résultats de mesure."
+            },
         ],
         reflexion: "Ce projet m'a aidé à mieux comprendre les signaux et leur importance dans les systèmes techniques."
     },
     8: {
-        titre: "Projet 8 - Mettre en place une solution informatique",
+        titre: "Projet 8 - Mettre en place une solution info pour l'entreprise",
         description: "Ce projet consiste à déployer une solution informatique pour résoudre un problème spécifique.",
         preuves: [
-            { titre: "Preuve 1", description: "Étude des besoins pour la solution." },
-            { titre: "Preuve 2", description: "Rapport sur la mise en œuvre de la solution." },
-            { titre: "Preuve 3", description: "Exercice pratique sur le déploiement de la solution." }
+            {
+                titre: "Preuve 1",
+                description: "Étude des besoins pour la solution."
+            },
+            {
+                titre: "Preuve 2",
+                description: "Rapport sur la mise en œuvre de la solution."
+            },
+            {
+                titre: "Preuve 3",
+                description: "Exercice pratique sur le déploiement de la solution."
+            },
         ],
         reflexion: "Ce projet m'a permis de développer mes compétences en résolution de problèmes et en déploiement de solutions informatiques."
     },
@@ -133,9 +160,18 @@ const projets = {
         titre: "Projet 9 - Projet intégratif",
         description: "Ce projet final regroupe toutes les compétences acquises pour réaliser un projet complet et complexe.",
         preuves: [
-            { titre: "Preuve 1", description: "Planification du projet." },
-            { titre: "Preuve 2", description: "Rapport sur les étapes du projet." },
-            { titre: "Preuve 3", description: "Présentation finale du projet." }
+            {
+                titre: "Preuve 1",
+                description: "Planification du projet."
+            },
+            {
+                titre: "Preuve 2",
+                description: "Rapport sur les étapes du projet."
+            },
+            {
+                titre: "Preuve 3",
+                description: "Présentation finale du projet."
+            },
         ],
         reflexion: "Ce projet m'a permis de mettre en pratique toutes les compétences acquises et de travailler sur un projet d'envergure."
     }
@@ -147,12 +183,12 @@ const projets = {
 
 const apprentissagesCritiques = {
     1: [
-        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "Acquis" },
-        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "Acquis" },
-        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "Acquis" },
+        { apprentissage: "AC11.02 Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "Acquis" },
+        { apprentissage: "AC11.04 Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "Acquis" },
+        { apprentissage: "AC11.05 Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "Acquis" },
     ],
     2: [
-        { apprentissage: " AC11.01 Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications", commentaire: "En cours d'acquisition" },
+        { apprentissage: "AC11.01 Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications", commentaire: "En cours d'acquisition" },
         { apprentissage: "AC11.02 Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "Acquis" },
         { apprentissage: "AC11.03 Configurer les fonctions de base du réseau local", commentaire: "Acquis" },
         { apprentissage: "AC11.04 Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "En cours d'acquisition" },
@@ -160,21 +196,21 @@ const apprentissagesCritiques = {
         { apprentissage: "AC11.06 Installer un poste client, expliquer la procédure mise en place", commentaire: "Acquis" },
     ],
     3: [
-        { apprentissage: "Mesurer et analyser les signaux", commentaire: "En cours d'acquisition" },
-        { apprentissage: "Déployer des supports de transmission", commentaire: "En cours d'acquisition " },
-        { apprentissage: "Communiquer avec un tiers (client, collaborateur…) et adapter son discours et sa langue à son interlocuteur", commentaire: "Acquis" },
+        { apprentissage: "AC12.01 Mesurer et analyser les signaux", commentaire: "En cours d'acquisition" },
+        { apprentissage: "AC12.03 Déployer des supports de transmission", commentaire: "En cours d'acquisition " },
+        { apprentissage: "AC12.05 Communiquer avec un tiers (client, collaborateur…) et adapter son discours et sa langue à son interlocuteur", commentaire: "Acquis" },
     ],
     4: [
-        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "Acquis" },
-        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "Acquis" },
+        { apprentissage: "AC13.01 Utiliser un système informatique et ses outils", commentaire: "Acquis" },
+        { apprentissage: "AC13.04 Connaître l'architecture et les technologies d'un site web", commentaire: "Acquis" },
     ],
     5: [
-        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "Acquis" },
-        { apprentissage: "Lire, exécuter, corriger et modifier un programme", commentaire: "À améliorer" },
-        { apprentissage: "Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "À améliorer" },
-        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "Acquis" },
-        { apprentissage: "Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "En cours d'acquisition" },
-        { apprentissage: "S'intégrer dans un environnement propice au développement et au travail collaboratif", commentaire: "Acquis" },
+        { apprentissage: "AC13.01 Utiliser un système informatique et ses outils", commentaire: "Acquis" },
+        { apprentissage: "AC13.02 Lire, exécuter, corriger et modifier un programme", commentaire: "À améliorer" },
+        { apprentissage: "AC13.03 Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "À améliorer" },
+        { apprentissage: "AC13.04 Connaître l'architecture et les technologies d'un site web", commentaire: "Acquis" },
+        { apprentissage: "AC13.05 Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "En cours d'acquisition" },
+        { apprentissage: "AC13.06 S'intégrer dans un environnement propice au développement et au travail collaboratif", commentaire: "Acquis" },
     ],
     6: [
         { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
@@ -244,9 +280,11 @@ if (projets[projetId]) {
 
 // Charger les apprentissages critiques dans le tableau
 if (apprentissagesCritiques[projetId]) {
+    console.log("On remplit le tableau !", apprentissagesCritiques[projetId]);
     const tableBody = document.getElementById("apprentissages-table");
 
     if (tableBody) {
+        tableBody.innerHTML = ""; // Vide le tableau avant d'ajouter les lignes
         apprentissagesCritiques[projetId].forEach(item => {
             const row = document.createElement("tr");
             row.innerHTML = `
