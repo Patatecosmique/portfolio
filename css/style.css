@@ -557,6 +557,27 @@ social-links a:hover {
     line-height: 1.4;
 }
 
+/* Style pour la section Mon implication */
+.implication-section {
+    background: var(--couleur-secondaire);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 24px 20px;
+    margin-bottom: 32px;
+}
+
+.implication-section h3 {
+    color: var(--couleur-texte);
+    margin-top: 0;
+}
+
+.implication-section p {
+    margin: 0;
+    font-size: 1.08em;
+    color: var(--couleur-texte);
+}
+
+
 /* Section de réflexion */
 #projet-reflexion {
     background: var(--couleur-secondaire); 
@@ -570,7 +591,7 @@ social-links a:hover {
 /* Titre de la réflexion */
 #projet-reflexion h3 {
     font-size: 1.8rem;
-    color: #d1d5db; 
+    color: var(--couleur-texte); 
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -579,7 +600,7 @@ social-links a:hover {
 /* Texte de la réflexion */
 #projet-reflexion p {
     font-size: 1rem;
-    color: #cbd5e1; 
+    color: var(--couleur-texte); 
     line-height: 1.8;
 }
 
@@ -671,10 +692,6 @@ social-links a:hover {
     color: var(--couleur-texte); /* Texte lisible */
     padding: 20px;
 }
-
-
-
-
 
 /* ---------------------------------------------------------------- */
 /* ---------------------- FOOTER (TOUTES PAGES) ------------------- */
@@ -801,3 +818,4 @@ footer {
         justify-content: center;
     }
 }
+

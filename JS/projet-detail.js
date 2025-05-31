@@ -6,7 +6,8 @@ const projetId = params.get('id');
 const projets = {
     1: {
         titre: "Projet 1 - Se sensibiliser à l'hygiène informatique",
-        description: "Ce projet vise à sensibiliser les utilisateurs aux bonnes pratiques en matière de sécurité informatique.",
+        description: `Dans ce projet, nous étions un groupe de 5 étudiants. Nous avons commencé par réaliser le MOOC de l'ANSSI, qui aborde plusieurs thématiques liées à la sécurité informatique, avec des cours et des QCM pour valider nos connaissances.
+        Ensuite, nous avons préparé un diaporama pour sensibiliser les utilisateurs aux bonnes pratiques. Un membre du groupe s'est chargé de coder un script pour tester le craquage de mots de passe faibles, tandis qu'un autre a réalisé une vidéo expliquant comment utiliser un gestionnaire de mots de passe. Ce travail d'équipe nous a permis de mieux comprendre les enjeux de la sécurité et de partager nos connaissances de façon concrète et pédagogique.`,
         preuves: [
             {
                 titre: "Preuve 1",
@@ -26,6 +27,7 @@ const projets = {
                     </a>`
             }
         ],
+        implication: "Pour ce projet, j'ai réalisé la vidéo montrant comment utiliser un gestionnaire de mots de passe et j'ai aidé à la création du script pour le craquage de mots de passe. J'ai également participé à la création du diaporama en donnant mon avis, qu'il soit positif ou négatif.",
         reflexion: "Ce projet était très intéressant car il m'a permis de découvrir les problèmes liés aux mots de passe trop faibles et les potentielles attaques qui peuvent en découler. J'ai beaucoup appris sur les bonnes pratiques en matière de sécurité informatique, ce qui donne une première vue essentielle sur ce domaine. Cela m'a également sensibilisé à l'importance de protéger ses données personnelles."
     },
     2: {
@@ -46,6 +48,7 @@ const projets = {
                 description: '<a href="./preuves/config-commutateur.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">Configuration</a> du matériel réseau.'
             }
         ],
+        implication: "",
         reflexion: "Au début, ce projet était très compliqué car il introduisait beaucoup de notions que je n'avais pas encore vues. Cependant, cela m'a poussé à chercher dans la documentation et à apprendre par moi-même, ce qui m'a permis de progresser plus rapidement. J'ai perdu un peu de temps au début sur certaines tâches, mais j'ai fini par mieux m'organiser. J'ai également pris un rôle de leader en expliquant les choses aux autres, ce qui m'a permis de développer des compétences en gestion de projet."
     },
     3: {
@@ -61,6 +64,7 @@ const projets = {
                 description: `Rédaction d'un <a href="./preuves/DTF.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">rapport technique</a> sur les mesures effectuées sur un câble coaxial.`
             }
         ],
+        implication: "",
         reflexion: "Ce projet était complexe, mais grâce à l'entraide avec mes camarades et ma façon de toujours chercher à comprendre comment les choses fonctionnent, j'ai pu en apprendre beaucoup sur les dispositifs de transmission. Cela m'a permis de mieux appréhender leur rôle et leur importance dans les réseaux."
     },
     4: {
@@ -72,6 +76,7 @@ const projets = {
                 description: `Création d'un site <a href="https://patatecosmique.github.io/PROJET-WEB/" target="_blank" rel="noopener noreferrer" class="custom-link">web personnel</a>.`
             }
         ],
+        implication: "",
         reflexion: "J'ai adoré ce projet, car il m'a permis d'apprendre à créer un beau site web. Je suis sûr que je peux encore m'améliorer, et je cherche toujours à progresser. J'ai bien géré mon temps et tout organisé, ce qui a rendu le projet fluide et agréable à réaliser."
     },
     5: {
@@ -97,6 +102,7 @@ const projets = {
                         <a href="./preuves/rapport.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">Voir le rapport</a>`
             }
         ],
+        implication: "",
         reflexion: "Même si je ne suis pas très fort en Python, j'ai tenté avec mes camarades de comprendre comment cela fonctionnait. Ils m'ont aidé, mais je pense qu'il faudrait que je pratique davantage chez moi pour progresser. Ce projet était très enrichissant et m'a permis d'apprendre beaucoup de choses sur le traitement des données."
     },
     6: {
@@ -116,6 +122,7 @@ const projets = {
                 description: "Rapport sur les performances du réseau."
             },
         ],
+        implication: "",
         reflexion: "Ce projet m'a permis de développer mes compétences en conception et configuration de réseaux informatiques."
     },
     7: {
@@ -135,6 +142,7 @@ const projets = {
                 description: "Analyse des résultats de mesure."
             },
         ],
+        implication: "",
         reflexion: "Ce projet m'a aidé à mieux comprendre les signaux et leur importance dans les systèmes techniques."
     },
     8: {
@@ -173,6 +181,7 @@ const projets = {
                 description: "Présentation finale du projet."
             },
         ],
+        implication: "",
         reflexion: "Ce projet m'a permis de mettre en pratique toutes les compétences acquises et de travailler sur un projet d'envergure."
     }
 };
@@ -213,28 +222,28 @@ const apprentissagesCritiques = {
         { apprentissage: "AC13.06 S'intégrer dans un environnement propice au développement et au travail collaboratif", commentaire: "Acquis" },
     ],
     6: [
-        { apprentissage: "Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
-        { apprentissage: "Configurer les fonctions de base du réseau local", commentaire: "" },
-        { apprentissage: "Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’intégrer avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "" },
-        { apprentissage: "Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "" },
-        { apprentissage: "Installer un poste client, expliquer la procédure mise en place", commentaire: "" },
+        { apprentissage: "AC11.02 Comprendre l’architecture et les fondements des systèmes numériques et les principes du code de l’information, des réseaux et de l’Internet", commentaire: "" },
+        { apprentissage: "AC11.03 Configurer les fonctions de base du réseau local", commentaire: "" },
+        { apprentissage: "AC11.04 Maîtriser les rôles et principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis", commentaire: "" },
+        { apprentissage: "AC11.05 Identifier les dysfonctionnements du réseau local et savoir les signaler", commentaire: "" },
+        { apprentissage: "AC11.06 Installer un poste client, expliquer la procédure mise en place", commentaire: "" },
     ],
     7: [
-        { apprentissage: "Mesurer et analyser les signaux", commentaire: "" },
-        { apprentissage: "Caractériser des systèmes de transmission élémentaire et découvrir la modulation mathématique de leur fonctionnement", commentaire: "" },
-        { apprentissage: "Déployer des supports de transmission", commentaire: "" },
-        { apprentissage: "Communiquer avec un tiers (client, collaborateur…) et adapter son discours et sa langue à son interlocuteur", commentaire: "" },
+        { apprentissage: "AC12.01 Mesurer et analyser les signaux", commentaire: "" },
+        { apprentissage: "AC12.02 Caractériser des systèmes de transmission élémentaire et découvrir la modulation mathématique de leur fonctionnement", commentaire: "" },
+        { apprentissage: "AC12.03 Déployer des supports de transmission", commentaire: "" },
+        { apprentissage: "AC12.05 Communiquer avec un tiers (client, collaborateur…) et adapter son discours et sa langue à son interlocuteur", commentaire: "" },
     ],
     8: [
-        { apprentissage: "Utiliser un système informatique et ses outils", commentaire: "" },
-        { apprentissage: "Lire, exécuter, corriger et modifier un programme", commentaire: "" },
-        { apprentissage: "Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "" },
-        { apprentissage: "Connaître l'architecture et les technologies d'un site web", commentaire: "" },
-        { apprentissage: "Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "" },
-        { apprentissage: "S'intégrer dans un environnement propice au dévloppement et au travail collaboratif", commentaire: "" },
+        { apprentissage: "AC13.01 Utiliser un système informatique et ses outils", commentaire: "" },
+        { apprentissage: "AC13.02 Lire, exécuter, corriger et modifier un programme", commentaire: "" },
+        { apprentissage: "AC13.03 Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "" },
+        { apprentissage: "AC13.04 Connaître l'architecture et les technologies d'un site web", commentaire: "" },
+        { apprentissage: "AC13.05 Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "" },
+        { apprentissage: "AC13.06 S'intégrer dans un environnement propice au développement et au travail collaboratif", commentaire: "" },
     ],
     9: [
-        { apprentissage: "Prend en compte tout les AC du semestre 2", commentaire: "" },
+        { apprentissage: "Prend en compte tous les AC du semestre 2", commentaire: "" },
     ]
 };
 
