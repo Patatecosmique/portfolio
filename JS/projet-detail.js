@@ -28,8 +28,13 @@ const projets = {
             }
         ],
         implication: "Pour ce projet, j'ai réalisé la vidéo expliquant comment utiliser un gestionnaire de mots de passe et j'ai également rédigé une notice explicative. J'ai contribué à la création du script pour le craquage de mots de passe et participé activement à l'élaboration du diaporama, en apportant des retours constructifs, qu'ils soient positifs ou négatifs.",
-        reflexion: `Ce projet était très intéressant car il m'a permis de découvrir les problèmes liés aux mots de passe trop faibles et les potentielles attaques qui peuvent en découler. J'ai beaucoup appris sur les bonnes pratiques en matière de sécurité informatique, ce qui donne une première vue essentielle sur ce domaine. Cela m'a également sensibilisé à l'importance de protéger ses données personnelles.
-        Notre oral s'est globalement bien passé, mais il a été trop long. Si c'était à refaire, il faudrait mieux cadrer notre temps de parole pour que chacun puisse s'exprimer de façon concise et que la présentation reste dynamique et respecte le temps imparti.`,
+        reflexion: `Ce projet a été particulièrement enrichissant, car il m’a permis de mieux comprendre les enjeux liés aux mots de passe faibles et les risques concrets que cela représente, notamment les attaques par force brute ou dictionnaire. J’ai ainsi pris conscience de l’importance d’adopter de bonnes pratiques en cybersécurité, comme l’utilisation de mots de passe complexes, l’authentification à deux facteurs ou encore la gestion sécurisée des identifiants. Cela m’a donné une première approche très concrète d’un domaine que je connaissais peu, et qui est pourtant fondamental dans notre quotidien numérique.
+
+Notre présentation orale s’est globalement bien déroulée, mais elle a été trop longue. Si c’était à refaire, je proposerais une méthode de préparation plus rigoureuse, avec un véritable découpage du temps de parole pour chaque intervenant. Par exemple, nous aurions pu utiliser un chronomètre lors des répétitions pour vérifier que chacun respecte un temps défini (2-3 minutes maximum par partie). J’aurais aussi recommandé de concevoir une structure plus dynamique, avec des transitions claires entre les parties, pour maintenir l’attention du jury et éviter les redondances.
+
+De plus, je pense qu’un support visuel plus synthétique aurait permis de mieux rythmer notre présentation. Trop de texte peut ralentir le discours et noyer les informations importantes. À l’avenir, j’opterais pour des slides contenant des mots-clés, schémas ou exemples concrets afin de faciliter la compréhension tout en servant de repère lors de la prise de parole.
+
+En résumé, cette expérience m’a non seulement appris des notions techniques importantes, mais elle m’a également permis de mieux comprendre comment transmettre efficacement un message technique dans un cadre professionnel. C’est une compétence précieuse que je compte continuer à développer.`,
     },
     2: {
         titre: "Projet 2 - S'initier aux réseaux informatiques",
@@ -50,7 +55,15 @@ const projets = {
             }
         ],
         implication: `Sur ce projet, j'ai configuré une machine virtuelle sur le serveur Proxmox, en installant et paramétrant différents services comme Samba, Apache et d'autres outils nécessaires au bon fonctionnement de la VM. J'ai également passé beaucoup de temps à diagnostiquer et corriger des problèmes liés à la configuration réseau, notamment sur les switches. J'ai participé à la mise en place des adresses IP, à la gestion des VLANs, et à la documentation des étapes réalisées pour faciliter le travail en équipe. Enfin, j'ai contribué à la coordination du groupe et à la répartition des tâches.`,
-        reflexion: `Si c'était à refaire, nous organiserions le projet différemment. Nous avons perdu beaucoup de temps au début à essayer de comprendre les attendus du projet et il nous manquait certaines compétences techniques pour réaliser certaines tâches. De plus, au sein du groupe, une personne devait s'occuper de la configuration des switches, mais a perdu trop de temps à vouloir les configurer virtuellement sur Cisco Paket Tracer, ce qui s'est révélé être une perte de temps. Pour une prochaine fois, nous prendrions plus de temps pour bien répartir les rôles, nous former sur les outils nécessaires dès le début et nous concentrer sur des méthodes de configuration adaptées au matériel réellement disponible. Cela nous permettrait d'être plus efficaces et de mieux avancer en équipe.`,
+        reflexion: `Si c’était à refaire, j’organiserais le projet très différemment. Au début, j’ai perdu beaucoup de temps à essayer de comprendre les attendus, sans vraiment avoir de vision claire de ce qu’on attendait de nous. Avec du recul, je pense qu’il aurait été utile de demander dès le départ un échange avec l’enseignant pour cadrer le travail, clarifier les objectifs et mieux planifier les étapes.
+
+J’ai aussi réalisé que certaines compétences techniques me manquaient au moment d’aborder des tâches plus complexes. Par exemple, je n’étais pas suffisamment à l’aise avec certains outils ou notions de configuration réseau. Si c’était à refaire, je prendrais le temps de me former en amont sur les outils clés (comme les commandes de configuration sur switches réels), même via des tutoriels ou des tests sur du matériel d'entraînement, pour ne pas bloquer ensuite en pleine réalisation.
+
+Un autre point que j’ai mal anticipé : j’ai voulu configurer les switches via Cisco Packet Tracer, pensant gagner du temps et simuler proprement le réseau. Mais je me suis vite rendu compte que cette méthode ne correspondait pas au matériel réel dont on disposait. J’ai donc perdu un temps précieux à faire quelque chose de peu utile. Si c’était à refaire, je m'assurerais dès le début que les méthodes choisies sont compatibles avec les ressources disponibles, en faisant un inventaire et en échangeant plus avec le groupe pour aligner les approches.
+
+Enfin, je pense que j’aurais dû mieux cadrer la répartition des rôles dans l’équipe. Même si chaque membre avait une tâche définie, on n’a pas toujours vérifié que chacun avait ce qu’il fallait pour avancer. À l’avenir, je proposerais qu’on mette en place un suivi plus régulier, avec de petits points de coordination hebdomadaires pour ajuster si besoin.
+
+Ce projet m’a permis de comprendre qu’au-delà des compétences techniques, la planification, l’adaptabilité et la communication sont essentielles pour qu’un projet de groupe avance correctement. C’est une leçon que je retiens clairement pour la suite.`,
     },
     3: {
         titre: "Projet 3 - Découvrir un dispositif de transmission",
@@ -66,11 +79,19 @@ const projets = {
             }
         ],
         implication: `Pour ce projet, j'ai rédigé les deux notices explicatives et réalisé toutes les mesures nécessaires ainsi que les calculs associés. J'ai aussi aidé certains groupes à comprendre les manipulations à effectuer et à interpréter les résultats. Mon implication a donc été à la fois technique et pédagogique, en contribuant à la réussite de mon groupe et en apportant mon aide aux autres.`,
-        reflexion: `Si c'était à refaire, je pense que j'aurais dû davantage motiver les autres membres du groupe à s'impliquer, car nous n'étions vraiment que deux à travailler sérieusement sur le projet. J'aurais pu organiser une réunion en début de projet pour bien répartir les tâches, fixer des objectifs clairs pour chacun et suivre régulièrement l'avancement. Avec plus de participation de tous, nous aurions sûrement mieux réussi à comprendre les manipulations à réaliser et à avancer plus rapidement. Cela aurait permis de mieux répartir les tâches et d'améliorer la qualité de notre travail collectif.`,
+        reflexion: `Si c’était à refaire, je pense que j’aurais dû jouer un rôle plus actif dans la dynamique de groupe, notamment en motivant davantage les autres membres à s’impliquer. Au final, nous n’étions vraiment que deux à travailler de manière régulière et sérieuse sur le projet, ce qui a clairement limité notre progression et notre efficacité collective.
+
+Avec du recul, j’aurais pu organiser une réunion dès le début pour poser un cadre clair : répartir les tâches équitablement, fixer des objectifs précis pour chaque membre et convenir de points d’étapes réguliers pour faire le suivi. Cela aurait permis de responsabiliser chacun et de créer un véritable engagement autour du projet. Une telle organisation aurait aussi évité que certaines personnes se retrouvent surchargées tandis que d’autres restent en retrait.
+
+Je suis convaincu qu’avec une participation plus équilibrée, nous aurions mieux compris les manipulations à réaliser, progressé plus rapidement et évité certaines erreurs liées au manque de coordination. Cela aurait également permis d’élever la qualité globale de notre travail, à la fois sur le fond (configurations, documentation) et sur la forme (présentation, structure du rendu final).
+
+Cette expérience m’a montré que la réussite d’un projet ne repose pas uniquement sur les compétences techniques, mais aussi sur la capacité à fédérer une équipe, à gérer le temps et à instaurer une dynamique collective. C’est un aspect que je prendrai en compte bien plus sérieusement dans mes futurs travaux en groupe.
+
+`,
     },
     4: {
-        titre: "Projet 4 - Se présenter sur Internet",
-        description:`Pour ce projet, je devais créer un site web sur le thème de mon choix, le concevoir de A à Z puis le publier en ligne via GitHub Pages. J'ai appris à structurer une page web, à utiliser HTML, CSS, et à gérer la mise en ligne du site. Ce projet m'a permis de découvrir le fonctionnement de GitHub, l'importance du versionnage et les étapes nécessaires pour rendre un site accessible à tous sur Internet.`,
+        titre: "Projet 4 - Création d'un site web",
+        description: `Pour ce projet, je devais créer un site web sur le thème de mon choix, le concevoir de A à Z puis le publier en ligne via GitHub Pages. J'ai appris à structurer une page web, à utiliser HTML, CSS, et à gérer la mise en ligne du site. Ce projet m'a permis de découvrir le fonctionnement de GitHub, l'importance du versionnage et les étapes nécessaires pour rendre un site accessible à tous sur Internet.`,
         preuves: [
             {
                 titre: "Preuve 1",
@@ -82,7 +103,13 @@ const projets = {
             }
         ],
         implication: `J'ai réalisé entièrement ce site seul, en me documentant pour comprendre et mettre en œuvre certaines parties techniques. J'ai pris soin de bien commenter mon code afin que toute personne qui le consulte puisse s'y retrouver facilement. J'ai également rédigé un fichier README sur GitHub pour expliquer le fonctionnement du site et faciliter sa prise en main. Ce projet m'a permis de développer mon autonomie, ma capacité à rechercher des solutions et à structurer un projet web de A à Z.`,
-        reflexion: `Ce projet m'a beaucoup plu car il m'a permis de découvrir la création et la publication d'un site web de A à Z. Si c'était à refaire, je prendrais encore plus de temps pour approfondir certains aspects techniques, comme le responsive design ou l'accessibilité, afin d'améliorer la qualité du site. J'aurais aussi pu demander plus de retours extérieurs pour corriger d'éventuelles erreurs ou améliorer l'expérience utilisateur. Cette remise en question me pousse à toujours vouloir progresser et à ne pas hésiter à solliciter l'avis d'autres personnes pour m'améliorer.`,
+        reflexion: `Ce projet m’a beaucoup plu, car il m’a permis de découvrir toutes les étapes de création et de publication d’un site web, de la conception à la mise en ligne. C’était la première fois que je réalisais un projet web aussi complet, et j’ai trouvé cela très enrichissant, autant sur le plan technique que créatif.
+
+Si c’était à refaire, je choisirais de consacrer davantage de temps à certains aspects plus spécifiques comme le responsive design, pour que le site s’adapte parfaitement à tous les formats d’écran (ordinateur, tablette, mobile), mais aussi à l’accessibilité, afin de le rendre plus inclusif pour tous les utilisateurs, y compris ceux en situation de handicap. Ce sont des critères souvent sous-estimés mais essentiels pour garantir un site web de qualité professionnelle.
+
+J’ai également compris l’importance des retours extérieurs. J’aurais pu demander à d’autres personnes — élèves, enseignants ou même des proches — de tester le site pour m’apporter un regard neuf. Cela m’aurait permis d’identifier plus tôt certaines erreurs ou points d’amélioration, notamment en termes d’ergonomie ou de navigation.
+
+Cette expérience m’a vraiment poussé à me remettre en question et à viser plus haut. Elle m’a montré qu’il ne faut pas hésiter à sortir de sa zone de confort, à approfondir les aspects techniques, mais aussi à solliciter des avis extérieurs pour progresser. C’est une démarche que je compte désormais adopter systématiquement dans mes projets futurs, quel que soit le domaine.`,
     },
     5: {
         titre: "Projet 5 - Traiter des données",
@@ -108,7 +135,13 @@ const projets = {
             }
         ],
         implication: `Pour ce projet, j'ai pris en charge la partie du code qui m'était attribuée, même si j'ai rencontré des difficultés en Python. Pour progresser, j'ai demandé de l'aide à mon binôme, regardé des vidéos et fait des recherches pour mieux comprendre. J'ai également documenté tout mon code avec des commentaires pour faciliter la compréhension, et j'ai participé à la rédaction de la documentation du projet. Cette expérience m'a permis de développer ma persévérance et ma capacité à apprendre de nouvelles compétences.`,
-        reflexion: `Si c'était à refaire, je pense que nous avons bien su nous organiser et répartir les tâches, ce qui nous a permis de ne pas perdre de temps. Cependant, nous aurions dû nous documenter davantage sur certains points précis de l'API Pokémon, car cela nous aurait permis de mieux comprendre certaines fonctionnalités et d'aller plus loin dans l'exploitation des données. Cette expérience montre l'importance de bien approfondir la documentation technique pour gagner en efficacité et en qualité de rendu.`,
+        reflexion: `Si c’était à refaire, je pense que nous conserverions la manière dont nous nous sommes organisés. La répartition des tâches était claire et équilibrée, ce qui nous a permis de travailler efficacement sans perdre de temps inutilement. Cette bonne organisation a été un vrai point fort du projet.
+
+En revanche, avec le recul, je me rends compte que nous aurions gagné à nous documenter plus en profondeur sur certains aspects de l’API Pokémon. Nous nous sommes parfois contentés des fonctions de base, sans explorer tout le potentiel que l’API pouvait offrir. Une meilleure compréhension de sa structure et de ses possibilités nous aurait permis d’exploiter davantage les données disponibles, de proposer des fonctionnalités plus avancées, et d'enrichir l'expérience utilisateur de notre application.
+
+Cette expérience m’a vraiment fait prendre conscience de l’importance de consulter et approfondir la documentation technique, surtout lorsqu’on travaille avec des outils ou services externes. Mieux s’informer au départ permet de gagner du temps ensuite, d’éviter des erreurs et surtout, d’atteindre un niveau de qualité supérieur dans le rendu final.
+
+C’est une leçon que je retiens pour mes prochains projets : prendre le temps de bien explorer la documentation, même si cela semble long au début, est un investissement qui paie toujours par la suite.`,
     },
     6: {
         titre: "Projet 6 - Construire un réseau info pour une petite structure",
@@ -116,15 +149,21 @@ const projets = {
         preuves: [
             {
                 titre: "Preuve 1",
-                description: `"Notice cours collaboratif sur Microsoft sur Active Directory. : <a href="/preuves/microsoft.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">voir-ici</a>`
+                description: `Notice cours collaboratif de Microsoft sur Active Directory (Windows Server) : <a href="/preuves/microsoft.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">voir-ici</a>`
             },
             {
                 titre: "Preuve 2",
-                description: "Cour cisco NetAcad <a href='https://www.netacad.com/fr/launch?id=e61ecaba-2256-4eff-979b-b9d5d367a66b&tab=curriculum&view=7f78de6d-7390-55d2-9d5d-1f75b5fa6ec7' target='_blank' rel='noopener noreferrer' class='custom-link'>'Switching and Routing'</a>"
+                description: "Cour cisco NetAcad <a href='https://www.netacad.com/fr/courses/ccna-switching-routing-wireless-essentials?courseLang=en-US' target='_blank' rel='noopener noreferrer' class='custom-link'>'Switching and Routing'</a>"
             },
         ],
         implication: `Pour ce projet, j'ai réalisé entièrement le TP d'entraînement sur Windows Server 2019, étant même le seul du groupe à l'avoir mené à terme. J'ai ensuite aidé mes camarades à comprendre les différentes étapes et à avancer dans leur propre travail. Je me suis aussi beaucoup investi dans la formation Cisco NetAcad "Switching and Routing", ce qui m'a permis de bien progresser sur la partie réseau. En revanche, j'ai moins suivi les cours sur Active Directory de Microsoft, ce qui est un point à améliorer.`,
-        reflexion: `Ce projet m'a permis de développer de solides compétences en configuration de réseaux et en administration de serveurs. J'ai été fier d'avoir mené à bien tout le TP d'entraînement, ce qui m'a permis d'aider mes camarades et de renforcer ma compréhension. Le fait de m'être avancé dans le cours Cisco NetAcad m'a permis de me concentrer davantage sur le reste du projet, ce qui a été très bénéfique. Si c'était à refaire, je prendrais le temps de mieux équilibrer mon investissement entre la partie réseau (Cisco NetAcad) et la partie Active Directory de Microsoft, car une meilleure maîtrise des deux aspects m'aurait permis d'être encore plus efficace et polyvalent. Cette expérience m'a montré l'importance de la curiosité, de l'entraide et d'une approche équilibrée dans l'apprentissage.`,
+        reflexion: `Ce projet m’a permis de développer de solides compétences en configuration de réseaux et en administration de serveurs (Windows Server 2019), deux domaines techniques que je trouvais particulièrement stimulants. J’ai été fier d’avoir réussi à mener à bien l’ensemble du TP d’entraînement, ce qui m’a non seulement permis de consolider ma propre compréhension, mais aussi d’aider mes camarades lorsqu’ils rencontraient des difficultés. Cette posture active m’a beaucoup appris, car expliquer à d’autres permet de mieux assimiler les notions soi-même.
+
+Le fait de m’être avancé sur le cours Cisco NetAcad dès le début du projet a été un véritable atout. Cela m’a permis de libérer du temps pour me concentrer plus sereinement sur le reste du projet, et de contribuer plus efficacement à l’avancement global de notre groupe.
+
+Cependant, si c’était à refaire, je chercherais à mieux équilibrer mon investissement entre la partie réseau (Cisco) et la partie Active Directory (Microsoft). J’ai consacré beaucoup d’énergie à la première, au détriment de la seconde. Or, une meilleure maîtrise des deux volets m’aurait permis d’être plus polyvalent et d’intervenir plus largement dans les différentes tâches du projet. Cela aurait aussi facilité la compréhension globale de l'infrastructure que nous devions mettre en place.
+
+Cette expérience m’a montré à quel point la curiosité, la proactivité, mais aussi l’équilibre dans l’apprentissage sont essentiels pour progresser efficacement. Elle m’a également conforté dans l’idée que l’entraide entre camarades joue un rôle clé, tant pour la réussite individuelle que pour celle du groupe.`,
     },
     7: {
         titre: "Projet 7 - Mesurer et caractériser un signal ou un système",
@@ -136,32 +175,50 @@ const projets = {
             },
             {
                 titre: "Preuve 2",
-                description: `<a href='./preuves/CR2.pdf' target='_blank' rel='noopener noreferrer' class='custom-link'>Compte rendu Binome</a> sur l'étude approfondie de la téléphonie mobile autour du Campus 3, avec analyse des technologies utilisées, des fréquences captées et des dispositifs de transmission observés.`,            
+                description: `<a href='./preuves/CR2.pdf' target='_blank' rel='noopener noreferrer' class='custom-link'>Compte rendu Binome</a> sur l'étude approfondie de la téléphonie mobile autour du Campus 3, avec analyse des technologies utilisées, des fréquences captées et des dispositifs de transmission observés.`,
             },
         ],
         implication: `Pour ce projet, j'ai beaucoup contribué à la compréhension globale du groupe, car nous n'étions vraiment que deux à travailler sérieusement. Nous nous sommes documentés et avons regardé des vidéos pour mieux comprendre les notions abordées et les résultats obtenus avec les graphiques générés via MATLAB. J'ai également rédigé les notices demandées et aidé à expliquer les manipulations et les résultats aux autres membres du groupe.`,
-        reflexion: `Ce projet m'a permis de progresser sur la compréhension des dispositifs de transmission et l'analyse de signaux. Si c'était à refaire, j'encouragerais une implication plus active de tous les membres du groupe dès le début, afin de mieux répartir les tâches et d'aller plus loin dans l'analyse des résultats. Cette expérience m'a montré l'importance de la collaboration, de la curiosité et de la recherche de ressources complémentaires pour bien comprendre les sujets techniques.`,
+        reflexion: `Ce projet m’a permis de progresser dans la compréhension des dispositifs de transmission et de l’analyse de signaux. Manipuler concrètement ces concepts m’a aidé à mieux les assimiler et à faire le lien avec les notions vues en cours.
+
+Si c’était à refaire, je chercherais à impliquer davantage tous les membres du groupe dès le départ. Une mobilisation collective plus forte aurait permis de mieux répartir les tâches et de prendre le temps d’approfondir l’analyse des résultats. À certains moments, j’ai senti qu’on aurait pu aller plus loin si chacun avait été plus engagé dès le début.
+
+Cette expérience m’a montré que la collaboration active, la curiosité personnelle et la recherche de ressources complémentaires sont essentielles pour vraiment comprendre des sujets techniques. Aller au-delà du strict minimum, poser des questions, chercher par soi-même : ce sont ces démarches qui font réellement progresser.`,
     },
     8: {
-        titre: "Projet 8 - Mettre en place une solution info pour l'entreprise",
+        titre: "Projet 8 - Création d'un site web dynamique avec API",
         description: `Ce projet avait pour objectif de réaliser la version 2 d'une application météo en utilisant une API météo. Nous avons travaillé avec Java pour la partie back-end, et HTML/CSS pour l'interface utilisateur. Il fallait intégrer les données de l'API, améliorer l'affichage et l'expérience utilisateur, et rédiger un README complet sur GitHub pour expliquer le fonctionnement du projet et faciliter sa prise en main.`,
         preuves: [
             {
                 titre: "Preuve 1",
-                description: "Site Web de l'application météo V2 : <a href='' target='_blank' rel='noopener noreferrer' class='custom-link'>voir ici</a>.",
+                description: "Site Web de l'application météo V2 : <a href='https://patatecosmique.github.io/SAE23-meteoV2-Pitois-Bastian/' target='_blank' rel='noopener noreferrer' class='custom-link'>voir ici</a>.",
             },
             {
                 titre: "Preuve 2",
                 description: "Lien ver le projet GitHub : <a href='https://github.com/Patatecosmique/SAE23-meteoV2-Pitois-Bastian' target='_blank' rel='noopener noreferrer' class='custom-link'>voir ici</a>. Ce dépôt contient l'ensemble du code source de l'application, la structure des fichiers, ainsi qu'un README détaillé.",
             },
-            
+
         ],
-        implication: `Pour ce projet, j'ai participé à l'intégration de l'API météo dans l'application, à l'amélioration de l'interface en HTML/CSS et à la rédaction du README sur GitHub. J'ai aussi contribué à la correction de bugs et à la documentation du code pour faciliter la compréhension.`,
-        reflexion: `Ce projet m'a permis de renforcer mes compétences en développement web, en intégration d'API et en travail collaboratif. J'ai pu mettre en pratique mes connaissances en Java, HTML et CSS, tout en découvrant l'importance de la documentation technique avec la rédaction d'un README sur GitHub. Si c'était à refaire, je prendrais plus de temps pour tester différentes API météo afin de comparer leurs fonctionnalités et leur facilité d'intégration. J'approfondirais aussi la gestion des erreurs côté Java pour rendre l'application plus robuste. Enfin, une meilleure organisation de la répartition des tâches aurait permis d'optimiser mon travail et d'améliorer la qualité du rendu final.`,
+        implication: `J'ai réalisé ce projet entièrement seul, de la conception à la mise en ligne. J'ai intégré l'API météo dans le back-end Java, conçu et amélioré l'interface utilisateur en HTML/CSS, et géré la totalité du code. J'ai également pris en charge la gestion des appels API, le traitement des erreurs, la correction des bugs, ainsi que la rédaction d'une documentation complète sur GitHub pour faciliter la prise en main du projet. Cette expérience m'a permis de développer mon autonomie, ma rigueur et mes compétences en développement web.`,
+        reflexion: `Ce projet m’a permis de renforcer significativement mes compétences en développement web, en particulier en intégration d’API, ainsi qu’en travail collaboratif. J’ai pu mettre en pratique mes connaissances en Java, HTML et CSS dans un contexte concret, ce qui m’a aidé à mieux maîtriser ces langages. Par ailleurs, la rédaction d’un README sur GitHub m’a fait prendre conscience de l’importance de la documentation technique, non seulement pour faciliter la compréhension du projet par d’autres développeurs, mais aussi pour structurer clairement les différentes étapes de notre travail.
+
+J’ai veillé à bien m’organiser personnellement dès le début du projet, en planifiant mon temps de travail et en priorisant les tâches importantes. Cette discipline m’a permis d’avancer de manière efficace et régulière, sans accumuler de retard, et de répondre aux différentes exigences du projet dans les délais impartis. Cette autonomie dans la gestion de mon travail a été un point fort, surtout dans un contexte de travail en équipe où chaque membre doit pouvoir compter sur la contribution des autres.
+
+Si c’était à refaire, je prendrais encore plus de temps pour tester plusieurs API météo afin de mieux comparer leurs fonctionnalités, leur fiabilité et leur facilité d’intégration. Cela m’aurait permis de choisir la solution la plus adaptée aux besoins du projet, tout en anticipant mieux les éventuelles contraintes techniques. Par ailleurs, j’approfondirais la gestion des erreurs côté Java afin de rendre l’application plus robuste et capable de gérer des cas inattendus, ce qui est essentiel pour garantir une expérience utilisateur fluide et sans bug.
+
+Cette expérience m’a donc non seulement permis de développer des compétences techniques solides, mais aussi d’améliorer ma capacité à travailler de manière autonome et méthodique. Elle m’a également sensibilisé à l’importance de la rigueur dans le développement et à la valeur ajoutée qu’apporte une documentation claire et complète.`,
     },
     9: {
         titre: "Projet 9 - Projet intégratif",
-        description: "Ce projet final regroupe toutes les compétences acquises pour réaliser un projet complet et complexe.",
+        description: `Le projet final rassemble toutes les compétences acquises pour réaliser un projet complet et complexe. Il comprend plusieurs parties :
+
+Une présentation, avec une section en anglais où nous avons utilisé un vocabulaire technique lié aux différents sujets.
+
+Une partie mathématique, où nous avons analysé de la documentation pour appliquer des méthodes comme la méthode de Sturm et répondre aux questions de l’examen final.
+
+Un TP en télécommunications sur les technologies 3G, 4G et les communications radio.
+
+La partie principale sur les réseaux, où nous avons configuré un réseau LAN connecté à un serveur GNS3, intégrant également un réseau WAN`,
         preuves: [
             {
                 titre: "Preuve 1",
@@ -176,8 +233,12 @@ const projets = {
                 description: "Présentation finale du projet."
             },
         ],
-        implication: "",
-        reflexion: "Ce projet m'a permis de mettre en pratique toutes les compétences acquises et de travailler sur un projet d'envergure."
+        implication: `Pour ce projet, j'ai pris en charge la configuration complète du réseau WAN sous GNS3, notamment la mise en place du protocole OSPF, la création et la propagation des routes par défaut sur l'ensemble des routeurs. J'ai également configuré le serveur Windows Server, en automatisant la création de 500 utilisateurs via un script, puis en mettant en place un partage réseau spécifique pour une unité d'organisation (OU) dans le domaine. J'ai intégré une machine cliente au domaine et assuré la connexion du switch L2/L3 à deux autres switches avec des liens agrégés, afin d'optimiser la redondance et la performance du réseau. Mon implication a donc couvert à la fois l'administration réseau avancée, la gestion des services Windows et l'intégration des équipements réseau.`,
+        reflexion: `Ce projet m’a offert une occasion précieuse de mettre en pratique l’ensemble des compétences que j’avais acquises au fil du temps, tout en m’impliquant dans un projet d’envergure, exigeant et intense. J’ai été constamment sollicité par plusieurs camarades qui avaient besoin d’aide, ce qui a ajouté une pression supplémentaire. Cette situation m’a appris à gérer efficacement cette charge de travail et à rester concentré, même dans un contexte stressant. J’ai dû faire preuve de réactivité et de patience, tout en veillant à ne pas sacrifier la qualité de mon propre travail.
+
+Sur le plan technique, particulièrement pour la partie réseau, j’ai constaté une nette amélioration de mon organisation par rapport au deuxième projet réseau du semestre 1. Cette fois-ci, j’ai su mieux anticiper les étapes clés, planifier mon travail de manière plus méthodique, et gérer les imprévus avec plus de sérénité. Cette meilleure organisation m’a permis non seulement d’avancer plus efficacement, mais aussi de mieux gérer la pression liée aux délais et aux attentes. En structurant mon travail et en priorisant mes tâches, j’ai réussi à maintenir un bon équilibre entre l’aide apportée aux autres et mes propres responsabilités.
+
+Cette expérience m’a donc non seulement permis de renforcer mes compétences techniques, mais aussi de développer des qualités essentielles telles que la gestion du stress, la communication et la solidarité au sein d’un groupe. Elle m’a également montré l’importance de l’organisation personnelle pour mener à bien un projet complexe, surtout lorsque l’on est sollicité sur plusieurs fronts.`
     }
 };
 
@@ -273,7 +334,15 @@ if (projets[projetId]) {
 
 
     // Mettre à jour la réflexion
-    document.getElementById("projet-reflexion-texte").textContent = projet.reflexion;
+    const reflexionElement = document.getElementById("projet-reflexion-texte");
+    if (projet.reflexion && reflexionElement) {
+        // Appliquer le formatage seulement pour les projets 1 à 5
+        if (["1", "2", "3", "4", "5", "6", "7", "8", "9"].includes(projetId)) {
+            reflexionElement.innerHTML = formatReflexion(projet.reflexion);
+        } else {
+            reflexionElement.textContent = projet.reflexion;
+        }
+    }
 } else {
     // Si l'ID du projet est invalide
     document.getElementById("projet-titre").textContent = "Projet non trouvé";
@@ -299,3 +368,16 @@ if (apprentissagesCritiques[projetId]) {
         });
     }
 }
+
+// Pour améliorer la lisibilité des réflexions, on formate le texte avec des retours à la ligne et du gras sur les points importants.
+function formatReflexion(reflexion) {
+    if (!reflexion) return "";
+    // Mettez en gras les mots clés importants (exemples, à adapter selon vos besoins)
+    let formatted = reflexion
+        .replace(/(Si c’était à refaire|En résumé|En conclusion|En revanche|De plus|Enfin|Notre présentation orale|Ce projet m’a permis|Ce projet a été particulièrement enrichissant|En résumé, cette expérience|Cette expérience m’a montré|Cette expérience m’a vraiment poussé|Cette bonne organisation a été un vrai point fort du projet)/g, "<b>$1</b>")
+        .replace(/(\bcybersécurité\b|\bmots de passe\b|\bplanification\b|\bcommunication\b|\borganisation\b|\bcompétences techniques\b|\bcollaboration\b|\bautonomie\b|\bdocumentation\b|\bAPI\b|\bproblèmes\b|\bsolutions\b)/gi, "<b>$1</b>")
+        // Ajoute des retours à la ligne pour chaque paragraphe
+        .replace(/\n\s*\n/g, "<br><br>");
+    return formatted;
+}
+
