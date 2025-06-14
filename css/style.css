@@ -183,7 +183,7 @@ social-links a:hover {
     border-radius: 50%; /* Cercle parfait */
     margin: 0 auto 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Légère ombre */
-    background-image: url('/img/photo-profil.jpg'); /* Remplacez par le chemin de votre photo */
+    background-image: url('./img/photo-profil.jpg'); /* Remplacez par le chemin de votre photo */
     background-size: cover;
     background-position: center;
 }
