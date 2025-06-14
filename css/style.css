@@ -179,11 +179,11 @@ social-links a:hover {
 .photo-profil {
     width: 150px;
     height: 150px;
-    background-color: var(--couleur-accent); /* Placeholder pour la photo */
-    border-radius: 50%; /* Cercle parfait */
+    background-color: var(--couleur-accent);
+    border-radius: 50%;
     margin: 0 auto 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Légère ombre */
-    background-image: url('../img/photo-profil.jpg'); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-image: url('/img/photo-profil.jpg'); /* Chemin absolu depuis la racine */
     background-size: cover;
     background-position: center;
 }
