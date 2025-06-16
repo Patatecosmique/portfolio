@@ -153,7 +153,7 @@ C’est une leçon que je retiens pour mes prochains projets : prendre le temps 
         preuves: [
             {
                 titre: "Preuve 1",
-                description: `Notice cours collaboratif de Microsoft sur Active Directory (Windows Server) : <a href="/preuves/microsoft.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">voir-ici</a>`
+                description: `Notice cours collaboratif de Microsoft sur Active Directory (Windows Server) : <a href="./preuves/microsoft.pdf" target="_blank" rel="noopener noreferrer" class="custom-link">voir-ici</a>`
             },
             {
                 titre: "Preuve 2",
