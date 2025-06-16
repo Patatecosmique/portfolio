@@ -32,8 +32,6 @@ html, body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: var(--couleur-fond); /* Fond bleu nuit uniforme pour toutes les pages */
-    color: var(--couleur-texte);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -161,7 +159,6 @@ social-links a:hover {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Prend toute la hauteur de l'écran */
-    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Dégradé élégant */
     color: var(--couleur-texte); /* Texte lisible */
     padding: 20px;
 }
@@ -171,8 +168,8 @@ social-links a:hover {
     max-width: 800px;
     padding: 30px;
     margin-top: 100px;
-    background: var(--couleur-secondaire); /* Fond semi-transparent */
-    backdrop-filter: blur(10px); /* Ajout de l'effet de flou */
+    background: rgba(255, 255, 255, 0.15); /* Fond très transparent */
+    backdrop-filter: blur(4px); /* Ajout de l'effet de flou */
     border-radius: 15px; /* Coins arrondis */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de profondeur */
 }
@@ -226,7 +223,7 @@ social-links a:hover {
 /* ---------------------------------------------------------------- */
 
 #competences {
-    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Même fond que les autres sections */
+    
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -293,7 +290,6 @@ social-links a:hover {
 /* ---------------------------------------------------------------- */
 
 #projets {
-    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Dégradé élégant */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -391,14 +387,6 @@ social-links a:hover {
     letter-spacing: 1px; 
 }
 
-/* Séparateur visuel entre les semestres */
-.separateur {
-    width: 80%; 
-    height: 2px; 
-    background-color: var(--couleur-accent); 
-    margin: 40px auto; 
-    opacity: 0.5; 
-}
 
 /* Sections supplémentaires avec même fond */
 #parcours, #sae, #projection {
@@ -461,117 +449,131 @@ social-links a:hover {
 /* ---------------------------------------------------------------- */
 
 /* Section principale pour le détail du projet */
-#main-projet-detail {
-    background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Dégradé élégant */
-}
+
 #projet-detail {
-    background: linear-gradient(120deg, #232b47 60%, #4f8cff 100%);
-    padding: 64px 40px;
-    max-width: 1400px; /* Plus large qu'avant */
+    padding: 56px 32px;
+    max-width: 1100px;
     margin: 0 auto;
-    margin-top: 80px;   /* Réduit la marge en haut */
-    margin-bottom: 40px; /* Ajoute ou réduit la marge en bas */
-    color: var(--couleur-texte); 
-    border-radius: 15px;
-    border: 2.5px solid #4f8cff;
-    box-shadow: 0 0 32px 6px #4f8cff88, 0 10px 30px rgba(0,0,0,0.25);
-    position: relative;
-}
-
-/* Titre principal du projet */
-#projet-titre {
-    margin-top: -40px;
-    font-size: 2.5rem;
-    color: #d1d5db; 
-    text-align: center;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Contenu principal du projet */
-#projet-contenu {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 40px;
-    text-align: center;
-    color: var(--couleur-texte); 
-}
-
-/* Sous-sections du projet */
-.projet-section {
-    margin-bottom: 50px;
-}
-
-/* Titres des sous-sections */
-.projet-section h3 {
-    font-size: 1.8rem;
-    color: var(--couleur-texte); 
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-/* Texte des sous-sections */
-.projet-section p {
-    font-size: 1rem;
+    margin-top: 90px;
+    margin-bottom: 48px;
     color: var(--couleur-texte);
-    line-height: 1.6;
-    margin-bottom: 20px;
+    border-radius: 22px;
+    border: 2px solid rgba(76, 140, 255, 0.18); /* bleu pâle et discret */
+    background: rgba(30, 41, 59, 0.55); /* effet verre */
+    backdrop-filter: blur(12px) saturate(140%);
+    box-shadow: 0 12px 48px rgba(0,0,0,0.25);
+    position: relative;
+    transition: box-shadow 0.3s, background 0.3s;
 }
 
-/* Liste des preuves (traces) */
+#projet-detail:hover {
+    box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+    background: rgba(30, 41, 59, 0.7);
+}
+
+#projet-titre {
+    margin-top: -32px;
+    font-size: 2.8rem;
+    color: var(--couleur-accent);
+    text-align: center;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+    text-shadow: 0 2px 12px rgba(76, 140, 255, 0.12);
+}
+
+#projet-contenu {
+    font-size: 1.18rem;
+    line-height: 1.85;
+    margin-bottom: 36px;
+    text-align: center;
+    color: var(--couleur-texte);
+    background: rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 18px 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+.projet-section {
+    margin-bottom: 44px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 10px;
+    padding: 18px 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.projet-section h3 {
+    font-size: 1.5rem;
+    color: var(--couleur-accent);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+}
+
+.projet-section p {
+    font-size: 1.05rem;
+    color: var(--couleur-texte);
+    line-height: 1.7;
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
 .projet-preuves {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 24px;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 }
 
-/* Carte pour chaque preuve */
 .preuve {
-    background: var(--couleur-secondaire); 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(76, 140, 255, 0.10);
+    padding: 22px 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.13);
     text-align: center;
-    width: 250px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 240px;
+    transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+    border: 1.5px solid rgba(76, 140, 255, 0.18); /* bleu pâle et discret */
 }
 
 .preuve:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.06) translateY(-4px);
+    box-shadow: 0 12px 32px rgba(76, 140, 255, 0.18);
+    background: rgba(76, 140, 255, 0.18);
 }
 
-/* Titre des preuves */
 .preuve h4 {
-    font-size: 1.2rem;
-    color: #a3b4c4; 
-    margin-bottom: 10px;
+    font-size: 1.15rem;
+    color: var(--couleur-accent);
+    margin-bottom: 8px;
+    font-weight: 700;
 }
 
-/* Description des preuves */
 .preuve p {
-    font-size: 0.9rem;
-    color: #cbd5e1; 
-    line-height: 1.4;
+    font-size: 0.98rem;
+    color: #e2e8f0;
+    line-height: 1.5;
 }
 
-/* Style pour la section Mon implication */
 .implication-section {
-    background: var(--couleur-secondaire);
+    background: rgba(30, 41, 59, 0.75);
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    padding: 24px 20px;
-    margin-bottom: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 22px 18px;
+    margin-bottom: 28px;
+    border-left: 3px solid rgba(76, 140, 255, 0.13); /* très discret */
+    background-image: linear-gradient(to right, rgba(76,140,255,0.07) 0, transparent 40%);
 }
 
 .implication-section h3 {
-    color: var(--couleur-texte);
+    color: var(--couleur-accent);
     margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .implication-section p {
@@ -580,106 +582,108 @@ social-links a:hover {
     color: var(--couleur-texte);
 }
 
-
-/* Section de réflexion */
 #projet-reflexion {
-    background: var(--couleur-secondaire); 
-    padding: 30px;
+    background: rgba(76, 140, 255, 0.09);
+    padding: 28px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    margin-top: 40px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+    margin-top: 36px;
     text-align: center;
+    border: 1.5px solid rgba(76, 140, 255, 0.18); /* bleu pâle et discret */
 }
 
-/* Titre de la réflexion */
 #projet-reflexion h3 {
-    font-size: 1.8rem;
-    color: var(--couleur-texte); 
-    margin-bottom: 20px;
+    font-size: 1.35rem;
+    color: var(--couleur-accent);
+    margin-bottom: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
-/* Texte de la réflexion */
 #projet-reflexion p {
-    font-size: 1rem;
-    color: var(--couleur-texte); 
-    line-height: 1.8;
+    font-size: 1.04rem;
+    color: var(--couleur-texte);
+    line-height: 1.7;
 }
 
-/* Bouton de retour */
 #retour-projets {
     text-align: center;
-    display: block;
-    width: 200px;
-    margin: 0 auto;
     display: inline-block;
-    margin-top: 30px;
-    padding: 10px 20px;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 28px;
+    padding: 10px 28px;
     background-color: var(--couleur-accent);
     color: var(--couleur-secondaire);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.08rem;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(76, 140, 255, 0.12);
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+    border: none;
 }
 
 #retour-projets:hover {
-    background-color: var(--couleur-texte); /* Gris légèrement atténué */
+    background-color: var(--couleur-texte);
+    color: var(--couleur-accent);
     transform: scale(1.05);
-    color: var(--couleur-secondaire);
 }
 
-/* Section des Apprentissages Critiques */
 #apprentissages-critiques {
-    margin-top: 40px;
-    padding: 30px;
-    background: var(--couleur-secondaire); /* Fond gris foncé */
+    margin-top: 36px;
+    padding: 26px;
+    background: rgba(30, 41, 59, 0.82);
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+    border: 1.5px solid rgba(76, 140, 255, 0.18); /* bleu pâle et discret */
 }
 
-/* Titre de la section */
 #apprentissages-critiques h3 {
-    font-size: 1.8rem;
-    color: var(--couleur-texte); /* Gris bleuté pour un contraste subtil */
-    margin-bottom: 20px;
+    font-size: 1.35rem;
+    color: var(--couleur-accent);
+    margin-bottom: 16px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
-/* Tableau des apprentissages critiques */
 #apprentissages-critiques table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 18px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(76, 140, 255, 0.07);
 }
 
 #apprentissages-critiques th,
 #apprentissages-critiques td {
-    padding: 15px;
+    padding: 13px 10px;
     text-align: left;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure subtile */
-    color: var(--couleur-texte); /* Texte blanc cassé */
+    border: 1px solid rgba(76, 140, 255, 0.10); /* encore plus discret */
+    color: var(--couleur-texte);
+    font-size: 1.01rem;
 }
 
 #apprentissages-critiques th {
-    background-color: var(--couleur-accent); /* Couleur d'accent */
-    color: var(--couleur-texte); /* Texte sombre */
+    background-color: var(--couleur-accent);
+    color: var(--couleur-secondaire);
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 #apprentissages-critiques td {
-    background-color: var(--couleur-secondaire); /* Fond bleu nuit */
+    background-color: rgba(30, 41, 59, 0.85);
 }
 
-/* Effet au survol des lignes */
 #apprentissages-critiques tr:hover td {
-    background-color: rgba(80, 200, 120, 0.1); /* Fond légèrement teinté */
-    transition: background-color 0.3s ease;
+    background-color: rgba(76, 140, 255, 0.13);
+    transition: background-color 0.3s;
 }
 
 /* ---------------------------------------------------------------- */
@@ -894,4 +898,23 @@ main .content {
     line-height: 1.7;
     margin-bottom: 1.2rem;
 }
+
+/* ---------------------------------------------------------------- */
+/* ---------------------- BACKGROUND ANIMATION --------------------- */
+/* ---------------------------------------------------------------- */
+
+#network-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: block;
+    background: #0a192f;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------- FIN BACKGROUND ANIMATION ---------------- */
+/* ---------------------------------------------------------------- */
 
