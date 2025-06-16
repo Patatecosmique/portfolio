@@ -197,7 +197,7 @@ social-links a:hover {
     max-width: 800px;
     padding: 30px;
     margin-top: 100px;
-    background: var(--couleur-secondaire); /* Fond gris foncé */
+    background: rgba(30, 41, 59, 0.7); /* Fond gris foncé transparent */
     
     border-radius: 15px; /* Coins arrondis */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de profondeur */
@@ -274,6 +274,7 @@ social-links a:hover {
 
 /* Grille des compétences */
 .grille-competences {
+    
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -284,7 +285,7 @@ social-links a:hover {
 
 /* Cartes des compétences */
 .competence {
-    background: var(--couleur-secondaire); /* Utilise la couleur secondaire pour contraste */
+    background: rgba(30, 41, 59, 0.7); /* Fond gris foncé transparent */
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -351,7 +352,7 @@ social-links a:hover {
 
 /* Cartes des projets */
 .projet {
-    background: var(--couleur-secondaire); /* Fond gris foncé */
+    background: rgba(30, 41, 59, 0.7); /* Fond gris foncé transparent */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -419,7 +420,8 @@ social-links a:hover {
 
 /* Sections supplémentaires avec même fond */
 #parcours, #sae, #projection {
-    background-color: var(--couleur-fond); 
+    background: rgba(30, 41, 59, 0.7); /* Fond gris foncé transparent */
+    background-color: transparent; /* Laisse passer l'animation */
     padding: 80px 20px;
     min-height: 80vh;
 }
@@ -433,7 +435,6 @@ social-links a:hover {
 }
 
 .case {
-    background-color: var(--couleur-secondaire);
     color: var(--couleur-texte);
     padding: 40px 60px;
     text-align: center;
@@ -455,7 +456,7 @@ social-links a:hover {
 }
 
 .projet {
-    background-color: var(--couleur-secondaire);
+    background: rgba(30, 41, 59, 0.7); /* Fond gris foncé transparent */
     color: var(--couleur-texte);
     padding: 20px;
     margin-bottom: 20px;
@@ -487,17 +488,17 @@ social-links a:hover {
     margin-bottom: 48px;
     color: var(--couleur-texte);
     border-radius: 22px;
-    border: 2px solid rgba(76, 140, 255, 0.18); /* bleu pâle et discret */
-    background: rgba(30, 41, 59, 0.55); /* effet verre */
-    backdrop-filter: blur(12px) saturate(140%);
-    box-shadow: 0 12px 48px rgba(0,0,0,0.25);
+    border: 1.5px solid rgba(255,255,255,0.08); /* Bordure très discrète */
+    background: rgba(30, 41, 59, 0.65); /* Fond verre plus neutre */
+    backdrop-filter: blur(10px) saturate(120%);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
     position: relative;
     transition: box-shadow 0.3s, background 0.3s;
 }
 
 #projet-detail:hover {
-    box-shadow: 0 18px 60px rgba(0,0,0,0.35);
-    background: rgba(30, 41, 59, 0.7);
+    box-shadow: 0 14px 48px rgba(0,0,0,0.25);
+    background: rgba(30, 41, 59, 0.78);
 }
 
 #projet-titre {
@@ -509,7 +510,7 @@ social-links a:hover {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 800;
-    text-shadow: 0 2px 12px rgba(76, 140, 255, 0.12);
+    text-shadow: 0 2px 12px rgba(76, 140, 255, 0.08);
 }
 
 #projet-contenu {
@@ -518,18 +519,18 @@ social-links a:hover {
     margin-bottom: 36px;
     text-align: center;
     color: var(--couleur-texte);
-    background: rgba(255,255,255,0.07);
+    background: rgba(255,255,255,0.04);
     border-radius: 12px;
     padding: 18px 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
 }
 
 .projet-section {
     margin-bottom: 44px;
-    background: rgba(255,255,255,0.04);
+    background: rgba(255,255,255,0.03);
     border-radius: 10px;
     padding: 18px 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .projet-section h3 {
@@ -559,20 +560,20 @@ social-links a:hover {
 }
 
 .preuve {
-    background: rgba(76, 140, 255, 0.10);
+    background: rgba(255,255,255,0.06); /* Fond très doux */
     padding: 22px 16px;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
     text-align: center;
     width: 240px;
     transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
-    border: 1.5px solid rgba(76, 140, 255, 0.18); /* bleu pâle et discret */
+    border: 1px solid rgba(255,255,255,0.10); /* Bordure très discrète */
 }
 
 .preuve:hover {
     transform: scale(1.06) translateY(-4px);
-    box-shadow: 0 12px 32px rgba(76, 140, 255, 0.18);
-    background: rgba(76, 140, 255, 0.18);
+    box-shadow: 0 12px 32px rgba(76, 140, 255, 0.10);
+    background: rgba(76, 140, 255, 0.10);
 }
 
 .preuve h4 {
@@ -589,13 +590,13 @@ social-links a:hover {
 }
 
 .implication-section {
-    background: rgba(30, 41, 59, 0.75);
+    background: rgba(30, 41, 59, 0.60);
     border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
     padding: 22px 18px;
     margin-bottom: 28px;
-    border-left: 3px solid rgba(76, 140, 255, 0.13); /* très discret */
-    background-image: linear-gradient(to right, rgba(76,140,255,0.07) 0, transparent 40%);
+    border-left: 3px solid rgba(76, 140, 255, 0.08); /* Très discret */
+    background-image: linear-gradient(to right, rgba(76,140,255,0.03) 0, transparent 40%);
 }
 
 .implication-section h3 {
@@ -612,13 +613,13 @@ social-links a:hover {
 }
 
 #projet-reflexion {
-    background: rgba(76, 140, 255, 0.09);
+    background: rgba(255,255,255,0.06);
     padding: 28px;
     border-radius: 15px;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
     margin-top: 36px;
     text-align: center;
-    border: 1.5px solid rgba(76, 140, 255, 0.18); /* bleu pâle et discret */
+    border: 1px solid rgba(255,255,255,0.10); /* Bordure très discrète */
 }
 
 #projet-reflexion h3 {
@@ -663,10 +664,10 @@ social-links a:hover {
 #apprentissages-critiques {
     margin-top: 36px;
     padding: 26px;
-    background: rgba(30, 41, 59, 0.82);
+    background: rgba(30, 41, 59, 0.70);
     border-radius: 15px;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
-    border: 1.5px solid rgba(76, 140, 255, 0.18); /* bleu pâle et discret */
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(255,255,255,0.10); /* Bordure très discrète */
 }
 
 #apprentissages-critiques h3 {
@@ -683,23 +684,23 @@ social-links a:hover {
     width: 100%;
     border-collapse: collapse;
     margin-top: 18px;
-    background: rgba(255,255,255,0.03);
+    background: rgba(255,255,255,0.02);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(76, 140, 255, 0.07);
+    box-shadow: 0 2px 8px rgba(76, 140, 255, 0.04);
 }
 
 #apprentissages-critiques th,
 #apprentissages-critiques td {
     padding: 13px 10px;
     text-align: left;
-    border: 1px solid rgba(76, 140, 255, 0.10); /* encore plus discret */
+    border: 1px solid rgba(255,255,255,0.07); /* Bordure très discrète */
     color: var(--couleur-texte);
     font-size: 1.01rem;
 }
 
 #apprentissages-critiques th {
-    background-color: var(--couleur-accent);
+    background-color: rgba(76, 140, 255, 0.13);
     color: var(--couleur-secondaire);
     text-transform: uppercase;
     font-weight: bold;
@@ -707,11 +708,11 @@ social-links a:hover {
 }
 
 #apprentissages-critiques td {
-    background-color: rgba(30, 41, 59, 0.85);
+    background-color: rgba(30, 41, 59, 0.80);
 }
 
 #apprentissages-critiques tr:hover td {
-    background-color: rgba(76, 140, 255, 0.13);
+    background-color: rgba(76, 140, 255, 0.09);
     transition: background-color 0.3s;
 }
 
