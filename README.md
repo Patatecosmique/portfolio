@@ -40,9 +40,3 @@ Bienvenue sur mon portfolio en ligne ! Ce site a été conçu dans le cadre de m
 Je suis **Bastian Pitois**, étudiant passionné par les **réseaux**, la **cybersécurité** et le **développement web**.  
 Ce portfolio reflète mon **engagement**, mon **évolution** et mes **centres d’intérêt** dans le domaine du numérique.
 
-## 📬 Me contacter
-
-- **Email** : [bastian.pitois@example.com](mailto:bastian.pitois@example.com)
-- **Téléphone** : +33 6 31 71 99 02
-- **LinkedIn** : [bastian-pitois](https://www.linkedin.com/in/bastian-pitois-855442316/)
-- **GitHub** : [Patatecosmique](https://github.com/Patatecosmique)
