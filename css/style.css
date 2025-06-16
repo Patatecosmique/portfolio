@@ -171,7 +171,7 @@ social-links a:hover {
     max-width: 800px;
     padding: 30px;
     margin-top: 100px;
-    background: rgba(0, 0, 0, 0.2); /* Fond semi-transparent */
+    background: var(--couleur-secondaire); /* Fond semi-transparent */
     backdrop-filter: blur(10px); /* Ajout de l'effet de flou */
     border-radius: 15px; /* Coins arrondis */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de profondeur */
@@ -695,6 +695,7 @@ social-links a:hover {
     color: var(--couleur-texte);
     padding: 100px 20px 40px 20px;
     /* Ajout d'un effet de transparence pour voir le fond sur les côtés */
+    
 }
 
 #projection .content {
@@ -702,15 +703,17 @@ social-links a:hover {
     border-radius: 18px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.25);
     padding: 48px 36px;
+    padding-bottom: 15px;
     max-width: 800px;
     width: 100%;
     animation: fadeIn 0.8s;
     margin: 0 auto;
+    
 }
 
 #projection h2 {
     font-size: 2.4rem;
-    color: var(--couleur-accent);
+    color: var(--couleur-texte);
     margin-bottom: 32px;
     text-align: center;
     letter-spacing: 1px;
