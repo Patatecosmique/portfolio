@@ -111,7 +111,7 @@ Cette expérience m’a montré que la réussite d’un projet ne repose pas uni
 
 Si c’était à refaire, je choisirais de consacrer davantage de temps à certains aspects plus spécifiques comme le responsive design, pour que le site s’adapte parfaitement à tous les formats d’écran (ordinateur, tablette, mobile), mais aussi à l’accessibilité, afin de le rendre plus inclusif pour tous les utilisateurs, y compris ceux en situation de handicap. Ce sont des critères souvent sous-estimés mais essentiels pour garantir un site web de qualité professionnelle.
 
-J’ai également compris l’importance des retours extérieurs. J’aurais pu demander à d’autres personnes — élèves, enseignants ou même des proches — de tester le site pour m’apporter un regard neuf. Cela m’aurait permis d’identifier plus tôt certaines erreurs ou points d’amélioration, notamment en termes d’ergonomie ou de navigation.
+J’ai également compris l’importance des retours extérieurs. J’aurais pu demander à d’autres personnes élèves, enseignants ou même des proches  de tester le site pour m’apporter un regard neuf. Cela m’aurait permis d’identifier plus tôt certaines erreurs ou points d’amélioration, notamment en termes d’ergonomie ou de navigation.
 
 Cette expérience m’a vraiment poussé à me remettre en question et à viser plus haut. Elle m’a montré qu’il ne faut pas hésiter à sortir de sa zone de confort, à approfondir les aspects techniques, mais aussi à solliciter des avis extérieurs pour progresser. C’est une démarche que je compte désormais adopter systématiquement dans mes projets futurs, quel que soit le domaine.`,
     },
@@ -298,14 +298,14 @@ const apprentissagesCritiques = {
     ],
     8: [
         { apprentissage: "AC13.01 Utiliser un système informatique et ses outils", commentaire: "Acquis" },
-        { apprentissage: "AC13.02 Lire, exécuter, corriger et modifier un programme", commentaire: "Acquis" },
+        { apprentissage: "AC13.02 Lire, exécuter, corriger et modifier un programme", commentaire: "En cours d'acquisition" },
         { apprentissage: "AC13.03 Traduire un algorithme, dans un langage et pour un environnement donné", commentaire: "Acquis" },
         { apprentissage: "AC13.04 Connaître l'architecture et les technologies d'un site web", commentaire: "Acquis" },
         { apprentissage: "AC13.05 Choisir les mécanismes de gestion de données adaptés au développement d’outils et argumenter ses choix", commentaire: "Acquis" },
         { apprentissage: "AC13.06 S'intégrer dans un environnement propice au développement et au travail collaboratif", commentaire: "Acquis" },
     ],
     9: [
-        { apprentissage: "Prend en compte tous les AC du semestre 2", commentaire: "" },
+        { apprentissage: "Prend en compte tous les AC du semestre 2", commentaire: "les 3/4 sont Acquis et/ou en cours d'acquisition" },
     ]
 };
 
