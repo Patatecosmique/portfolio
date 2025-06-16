@@ -465,7 +465,7 @@ social-links a:hover {
     background: linear-gradient(135deg, var(--couleur-primaire), var(--couleur-secondaire)); /* Dégradé élégant */
 }
 #projet-detail {
-    background: linear-gradient(95deg, var(--couleur-fond), var(--couleur-secondaire)); /* Dégradé élégant */
+    background: linear-gradient(120deg, #232b47 60%, #4f8cff 100%);
     padding: 64px 40px;
     max-width: 1400px; /* Plus large qu'avant */
     margin: 0 auto;
