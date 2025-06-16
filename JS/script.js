@@ -17,14 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('network-bg');
+    if (!canvas) return;
     const ctx = canvas.getContext('2d');
     let width = window.innerWidth;
     let height = window.innerHeight;
     canvas.width = width;
     canvas.height = height;
 
-    const POINTS = 150; // Augmente le nombre de points (ex: 120 ou plus)
-    const DIST = 220;   // Augmente la distance de connexion (ex: 200 ou plus)
+    const POINTS = 120;
+    const DIST = 200;
     const points = [];
 
     function resize() {
