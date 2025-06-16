@@ -180,13 +180,12 @@ social-links a:hover {
 .photo-profil {
     width: 150px;
     height: 150px;
-    background-color: var(--couleur-accent);
+    object-fit: cover;
     border-radius: 50%;
+    display: block;
     margin: 0 auto 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background-image: url('/photo-profil.jpg'); /* Chemin relatif depuis /css/ */
-    background-size: cover;
-    background-position: center;
+    background-color: var(--couleur-accent);
 }
 
 .nom-prenom {
